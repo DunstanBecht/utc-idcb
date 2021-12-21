@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-29 19:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dunstan Becht <dunstan@becht.network>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# To compile:
+# sudo apt install gettext
+# msgfmt messages.po
+
+# Errors -------------------------------------------------------------------- #
+
+msgid "error"
+msgstr "Error"
+
+msgid "error_403"
+msgstr "(403) Forbidden."
+
+msgid "error_404"
+msgstr "(404) Not found."
+
+msgid "nonexistent_user"
+msgstr "Nonexistent user."
+
+msgid "nonexistent_admin"
+msgstr "Nonexistent admin."
+
+msgid "incorrect_password"
+msgstr "Incorrect password."
+
+# Navigation ---------------------------------------------------------------- #
+
+msgid "controller_home"
+msgstr "Information"
+
+msgid "controller_guide"
+msgstr "Guide"
+
+msgid "controller_account"
+msgstr "Account"
+
+msgid "action_account_login"
+msgstr "Log in"
+
+msgid "action_account_register"
+msgstr "Register"
+
+msgid "action_account_passwordreset"
+msgstr "Forgot your password"
+
+msgid "action_admin_login"
+msgstr "Log in"
+
+# Text ---------------------------------------------------------------------- #
+
+msgid "title_project"
+msgstr "Project"
+
+msgid "title_team"
+msgstr "Team"
+
+msgid "mail"
+msgstr "Mail address"
+
+msgid "admin"
+msgstr "Admin"
+
+msgid "password"
+msgstr "Password"
+
+msgid "welcome_paragraph"
+msgstr "Description (en)."
+
+msgid "subject_confirm"
+msgstr "Confirm your email address"
+
+msgid "message_confirm"
+msgstr "To confirm your email address and continue creating your account use the following link."
