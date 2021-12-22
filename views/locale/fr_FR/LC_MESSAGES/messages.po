@@ -86,3 +86,11 @@ msgstr "Confirmez votre adresse mail"
 
 msgid "message_confirm"
 msgstr "Pour confirmer votre adresse mail et poursuivre la création de votre compte utilisez le lien suivant."
+
+# Guide --------------------------------------------------------------------- #
+
+msgid "answer_yes"
+msgstr "oui"
+
+msgid "answer_no"
+msgstr "non"

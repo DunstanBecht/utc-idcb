@@ -55,6 +55,9 @@ msgstr "Register"
 msgid "action_account_passwordreset"
 msgstr "Forgot your password"
 
+msgid "controller_admin"
+msgstr "Administration"
+
 msgid "action_admin_login"
 msgstr "Log in"
 
@@ -83,3 +86,11 @@ msgstr "Confirm your email address"
 
 msgid "message_confirm"
 msgstr "To confirm your email address and continue creating your account use the following link."
+
+# Guide --------------------------------------------------------------------- #
+
+msgid "answer_yes"
+msgstr "yes"
+
+msgid "answer_no"
+msgstr "no"
