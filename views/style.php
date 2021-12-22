@@ -8,11 +8,10 @@
 header('content-type: text/css; charset: UTF-8');
 ob_start('ob_gzhandler');
 header('Cache-Control: max-age=3600, must-revalidate');
-
 ?>
 
 body {
-  background: url("/content/pictures/background.svg") no-repeat center fixed #000000;
+  background: url("/content/pictures/background.svg") no-repeat center fixed #ffffff;
   background-size: cover;
 }
 

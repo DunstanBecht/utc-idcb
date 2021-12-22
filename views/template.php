@@ -17,7 +17,7 @@ $description = 'Description.';
     <link rel="stylesheet" href="<?= UNITY ?>/style/articles/1" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/fonts/1" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/signage/1" type="text/css" media="all">
-    <link rel="stylesheet" href="<?= UNITY ?>/style/colors/1" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= UNITY ?>/style/colors/1?action=<?= urlencode("#fcd216ff") ?>" type="text/css" media="all">
     <link rel="stylesheet" href="/views/style.php" type="text/css" media="all">
     <link rel="icon" href="/content/pictures/favicon.svg" sizes="any" type="image/svg+xml">
     <meta property="og:title" content="<?= $website ?>">
