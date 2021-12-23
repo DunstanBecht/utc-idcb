@@ -19,11 +19,11 @@ ob_start(); ?>
 
 ob_start(); ?>
 <p><br>
-  GbelayChristina <br>
+  Gbelay Christina <br>
   Dalla Riva Catherine <br>
   Level Charline<br>
   Bencheriff Hamza<br>
-  AitSaid Hamza<br>
+  Ait Said Hamza<br>
 </p>
 <?php $down_team = ob_get_clean();
 
