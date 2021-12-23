@@ -1,6 +1,6 @@
 <?php
 /**
- * This file defines the class controllers\Step.
+ * This file defines the class controllers\steps\Step.
  * @author Dunstan Becht <dunstan@becht.network>
  * @package tabs\guide
  */
@@ -13,7 +13,7 @@ namespace controllers\steps;
 abstract class Step {
 
   /**
-   * All declared steps.
+   * All defined steps.
    * @var array
    */
   private static $pool = array();

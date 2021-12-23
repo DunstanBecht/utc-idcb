@@ -1,6 +1,6 @@
 <?php
 /**
- * This file defines the class controllers\Define.
+ * This file defines the class controllers\steps\Define.
  * @author Dunstan Becht <dunstan@becht.network>
  * @package tabs\guide
  */
@@ -38,10 +38,10 @@ class Define extends Step {
    */
   public function __construct($id, $name, $value, $next) {
     parent::__construct($id);
+    $this->visible = False;
     $this->name = $name;
     $this->value = $value;
     $this->next = $next;
-    $this->visible = False;
   }
 
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * This file defines the class controllers\Radio.
+ * This file defines the class controllers\steps\Radio.
  * @author Dunstan Becht <dunstan@becht.network>
  * @package tabs\guide
  */
@@ -8,7 +8,7 @@
 namespace controllers\steps;
 
 /**
- * This class represents a step of type radio in the guide.
+ * This class represents a form with radio type entries.
  */
 class Radio extends Step {
 
@@ -26,8 +26,8 @@ class Radio extends Step {
    */
   public function __construct($id, $rules) {
     parent::__construct($id);
-    $this->rules = $rules;
     $this->visible = True;
+    $this->rules = $rules;
   }
 
 }

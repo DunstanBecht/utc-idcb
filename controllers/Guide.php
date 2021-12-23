@@ -8,13 +8,13 @@
 namespace controllers;
 
 /**
- * This class manages the interactions with the content of the information tab.
+ * This class manages the interactions with the content of the guide tab.
  */
 class Guide extends Controller {
 
   /**
-   * Handle a step of kind declare.
-   * @param Declare $step Declare step.
+   * Handle a step of kind define.
+   * @param Define $step Step of kind define.
    * @return void
    */
   private function define($step) {
@@ -26,26 +26,28 @@ class Guide extends Controller {
 
   /**
    * Handle a step of kind match.
-   * @param Radio $step Radio step.
+   * @param Match $step Step of kind match.
    * @return void
    */
   private function match($step) {
-    $next_step = $step->rules[$_SESSION['data'][$step->name]];
-    $this->next($next_step);
+    $value = $_SESSION['data'][$step->name];
+    $next = $step->rules[$value];
+    $this->next($next);
     $this->home();
   }
 
   /**
    * Handle a step of kind radio.
-   * @param Radio $step Radio step.
+   * @param Radio $step Step of kind radio.
    * @return void
    */
   private function radio($step) {
     if (isset($_SESSION[$step->id])) {
-      $next_step = $step->rules[$_SESSION[$step->id]];
-      $this->next($next_step);
-      $_SESSION["answers"][$step->id] = $_SESSION[$step->id];
+      $value = $_SESSION[$step->id];
       unset($_SESSION[$step->id]);
+      $next = $step->rules[$value];
+      $this->next($next);
+      $_SESSION["answers"][$step->id] = $value;
       $this->home();
     } else {
       require 'views/pages/guide/home.php';
@@ -73,17 +75,18 @@ class Guide extends Controller {
   }
 
   /**
-   * This method allows a return to the previous step.
+   * This method allows a return to the previous visible step.
    * @return void
    */
   public function back() {
     if (count($_SESSION['path'])>1) {
       array_pop($_SESSION['path']);
     }
-    if (!steps\Step::get(end($_SESSION['path']))->visible) {
+    if (steps\Step::get(end($_SESSION['path']))->visible) {
+      $this->redirect(PATH_LANGUAGE . '/guide');
+    } else {
       $this->back();
     }
-    $this->redirect(PATH_LANGUAGE . '/guide');
   }
 
   /**
