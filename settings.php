@@ -55,6 +55,8 @@ define('PROTECTED_VARIABLES',
   array(
     "admin",
     "user",
+    "path",
+    "answers",
   )
 );
 
