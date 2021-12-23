@@ -1,4 +1,9 @@
 <?php
+/**
+ * This file defines the representation of information in account tab.
+ * @author Dunstan Becht <dunstan@becht.network>
+ * @package tabs\account
+ */
 
 ob_start(); ?>
 <main>

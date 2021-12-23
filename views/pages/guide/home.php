@@ -1,8 +1,8 @@
 <?php
 /**
- * This file defines the representation of information in scores tab.
+ * This file defines the representation of information in guide tab.
  * @author Dunstan Becht <dunstan@becht.network>
- * @package tabs\scores
+ * @package tabs\guide
  */
 
 /**

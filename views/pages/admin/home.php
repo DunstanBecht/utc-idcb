@@ -1,4 +1,9 @@
 <?php
+/**
+ * This file defines the representation of information in admin tab.
+ * @author Dunstan Becht <dunstan@becht.network>
+ * @package tabs\admin
+ */
 
 ob_start(); ?>
 <main>
