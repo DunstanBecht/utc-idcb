@@ -89,11 +89,14 @@ msgstr "To confirm your email address and continue creating your account use the
 
 # Guide --------------------------------------------------------------------- #
 
+msgid "form_submit"
+msgstr "Submit"
+
+msgid "form_back"
+msgstr "Back"
+
 msgid "answer_yes"
 msgstr "yes"
 
 msgid "answer_no"
 msgstr "no"
-
-msgid "form_submit"
-msgstr "Submit"

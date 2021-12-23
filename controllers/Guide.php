@@ -96,7 +96,7 @@ class Guide extends Controller {
   public function __construct() {
     require 'controllers/guide_steps.php';
     if (!isset($_SESSION["path"])) {
-      $_SESSION["path"] = array('is_a_dm');
+      $_SESSION["path"] = array('medical_device');
       $_SESSION["answers"] = array();
       $_SESSION["data"] = array();
     }

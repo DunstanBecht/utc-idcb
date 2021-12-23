@@ -20,7 +20,7 @@ function radio_answer($question_id, $answer_value) {
          value="<?= $answer_value ?>"
          <?= (isset($_SESSION["answers"][$question_id]) and $_SESSION["answers"][$question_id]==$answer_value) ? "checked" : "" ?>
   >
-  <label for="<?= $answer_id ?>"><?= _($answer_value) ?></label>
+  <label for="<?= $answer_id ?>"><?= _('answer_' . $answer_value) ?></label>
   <br>
   <?php return ob_get_clean();
 }
@@ -38,8 +38,9 @@ function radio($question_id, $answer_values) {
     echo radio_answer($question_id, $answer_value);
   }
   ?>
+  <br>
+  <input class="action" type="submit" value="<?= _('form_submit')?>">
   </p>
-  <input class="send" type="submit" value="<?= _('form_submit')?>">
   </form>
   <?php return ob_get_clean();
 }
@@ -59,14 +60,14 @@ ob_start(); ?>
 <main>
   <?php if (count($_SESSION["path"])>1) { ?>
     <article>
-      <p><a class='action' href="/guide/back"><?= _('back') ?></a></p>
+      <p><a class='action' href="<?= PATH_LANGUAGE ?>/guide/back"><?= _('form_back') ?></a></p>
     </article><br>
   <?php } ?>
   <article>
-    <h1><?= _('title_' . $step->id) ?></h1>
-    <p><?= _('text_' . $step->id) ?></p><br>
     <p>
-    <?= handle($step); ?>
+      <?= _('text_' . $step->id) ?><br>
+      <br>
+      <?= handle($step); ?>
     </p>
   </article>
 </main>

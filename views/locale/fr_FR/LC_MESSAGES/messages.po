@@ -89,11 +89,170 @@ msgstr "Pour confirmer votre adresse mail et poursuivre la création de votre co
 
 # Guide --------------------------------------------------------------------- #
 
+msgid "form_submit"
+msgstr "Suivant"
+
+msgid "form_back"
+msgstr "Retour"
+
 msgid "answer_yes"
 msgstr "oui"
 
 msgid "answer_no"
 msgstr "non"
 
-msgid "form_submit"
-msgstr "Envoyer"
+msgid "text_medical_device"
+msgstr "Le dispositif médical rempli l'un des critères suivants. Si aucun d'eux n'est satisfait veuillez vous orienter vers une autre procédure de certification."
+
+msgid "text_software"
+msgstr "Le dispositif est un logiciel."
+
+msgid "text_support_for_therapeutic_or_diagnostic_decisions"
+msgstr "Le dispositif permet une aide à la décision térapeutique ou au diagnotic."
+
+msgid "text_possible_death_or_irreversible_deterioration"
+msgstr "Le dispositif peut entrainer la mort ou une détérioration irréversible."
+
+msgid "text_possible_deterioration_but_not_death"
+msgstr "Détérioration possible mais qui n'implique pas la mort du patient."
+
+msgid "text_active_device"
+msgstr "Le dispositif est actif."
+
+msgid "text_active_therapeutic_device"
+msgstr "Dispositif actif thérapeutique."
+
+msgid "text_usage"
+msgstr "Pour quel usage?"
+
+msgid "answer_command_or_control_action_on_AIMD"
+msgstr "Action de commande ou de controle sur les DMIA."
+
+msgid "answer_supply_or_transfer_of_energy"
+msgstr "Fourniture ou transfert d'energie."
+
+msgid "answer_ionizing_emitter"
+msgstr "Fourniture ou transfert d'energie."
+
+msgid "answer_other"
+msgstr "Autre."
+
+msgid "text_diagnosis_and_control"
+msgstr "Le dispositif est destiné au diagnostic ou au contrôle."
+
+msgid "text_danger_administration_withdrawal_of_drugs_liquids_or_substances"
+msgstr "Administration retrait de médicaments, liquides ou subtances comportant un danger."
+
+msgid "text_vital_diagnosis_and_controls_for_immediate_danger"
+msgstr "Diagnostic et contrôles vitaux pour un danger immédiat."
+
+msgid "text_invasive"
+msgstr "Le dispositif est invasif."
+
+msgid "text_conduction_or_storage_of_biological_fluid"
+msgstr "Conduction ou stockage de liquide biologique."
+
+msgid "text_blood_bag"
+msgstr "Le dispositif comporte une poche de sang."
+
+msgid "text_modification_of_the_biological_or_chemical_composition_of_the_body"
+msgstr "Modification des compositions biologiques ou chimiques du corps."
+
+msgid "text_filtration_in_the_presence_of_gas"
+msgstr "Le dispositif effectue une filtration en présence de gaz."
+
+msgid "text_contact_with_injured_skin"
+msgstr "Contact avec la peau lésée."
+
+msgid "text_wound_that_involves_the_destruction_of_the_dermis"
+msgstr "Plaie qui implique la destruction du derme."
+
+msgid "text_mechanical_barrier"
+msgstr "Le dispositif est une barrière mécanique."
+
+msgid "text_invasive_way"
+msgstr "Voie d'accès du dispositif."
+
+msgid "answer_natural_orifice"
+msgstr "Par un orifice naturel."
+
+msgid "answer_surgical"
+msgstr "Par un acte chirurgical."
+
+msgid "text_inhalation"
+msgstr "Inhalation."
+
+msgid "text_drug_have_an_impact_on_the_vital_prognosis"
+msgstr "Le médicament a une incidence sur le pronostic vital du patient."
+
+msgid "text_duration_inhalation"
+msgstr "Durée d'utilisation."
+
+msgid "answer_temporary_continuous_for_less_than_60min"
+msgstr "Temporaire (en continu pour moins de 60 min)"
+
+msgid "answer_short_continuous_between_60min_and_30days"
+msgstr "Court (en continu entre 60 min et 30 jours)"
+
+msgid "answer_long_continuous_for_more_than_30days"
+msgstr "Long (en continu pendant plus de 30 jours)"
+
+msgid "text_short_application_in_the_oral_nasal_or_auditory_cavity"
+msgstr "Application dans la cavité buccale, nasale ou aditive."
+
+msgid "text_long_application_in_the_oral_nasal_or_auditory_cavity"
+msgstr "Application dans la cavité buccale, nasale ou aditive."
+
+msgid "text_duration_surgical"
+msgstr "Usage."
+
+msgid "text_usage_surgical_long"
+msgstr "Usage."
+
+msgid "answer_implanted_in_the_teeth"
+msgstr "Implanté dans les dents."
+
+msgid "answer_direct_contact_with_the_CNS_or_the_CSC_or_the_heart"
+msgstr "Contact direct avec le SNC, le SCC ou le coeur."
+
+msgid "answer_biological_effect_on_the_organism"
+msgstr "Effet biologique sur l'organisme."
+
+msgid "answer_induces_a_chemical_transformation_in_the_body"
+msgstr "Induit une transformation chimique dans le corps du patient."
+
+msgid "answer_allows_the_administration_of_medication"
+msgstr "Permet l'administration de médicaments?"
+
+msgid "answer_active_implantable_medical_devices_AIMD"
+msgstr "Dispositifs Médicaux Implantables Actifs (DMIA)."
+
+msgid "answer_implants_eg_breast_implants)"
+msgstr "Implants (mamaires par exemple)."
+
+msgid "answer_joint_or_disc_prostheses"
+msgstr "Prothèses articulaires ou discales."
+
+msgid "text_reusable"
+msgstr "Le dispositif est réutilisable."
+
+msgid "text_usage_surgical_short"
+msgstr "Usage."
+
+msgid "answer_control_monitoring_function_for_heart_and_CSC_diagnosis_by_direct_contact"
+msgstr "Fonction de contrôle ou de surveillance du diagnostic du coeur et du SCC par contact direct."
+
+msgid "answer_direct_contact_with_the_CNS"
+msgstr "direct_contact_with_the_CNS"
+
+msgid "answer_ionizing_radiation"
+msgstr "Rayonnement ionisant."
+
+msgid "answer_biological_effect_on_the_human_body"
+msgstr "Effet biologique sur le corps humain."
+
+msgid "answer_administration_of_risky_drugs"
+msgstr "Administration de médicaments à risques."
+
+msgid "text_ce_marked"
+msgstr "Le dispositif a déjà été marqué CE."
