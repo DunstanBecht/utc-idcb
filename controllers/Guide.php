@@ -57,7 +57,7 @@ class Guide extends Controller {
    * @return void
    */
   public function home() {
-    $step = Step::get(end($_SESSION["path"]));
+    $step = steps\Step::get(end($_SESSION["path"]));
     $array = explode('\\', get_class($step));
     $method = strtolower(end($array));
     $this->$method($step);
@@ -80,7 +80,7 @@ class Guide extends Controller {
     if (count($_SESSION['path'])>1) {
       array_pop($_SESSION['path']);
     }
-    if (!Step::get(end($_SESSION['path']))->visible) {
+    if (!steps\Step::get(end($_SESSION['path']))->visible) {
       $this->back();
     }
     $this->redirect(PATH_LANGUAGE . '/guide');

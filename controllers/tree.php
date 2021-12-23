@@ -5,7 +5,7 @@
  * @package tabs\guide
  */
 
-namespace controllers;
+namespace controllers\steps;
 
 new Radio('is_a_dm', array('yes'=>'select_class',
                             'no'=>'see_other'));

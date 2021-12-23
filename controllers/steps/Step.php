@@ -5,7 +5,7 @@
  * @package tabs\guide
  */
 
-namespace controllers;
+namespace controllers\steps;
 
 /**
  * This class represents a step in the guide.

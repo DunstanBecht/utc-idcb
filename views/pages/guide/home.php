@@ -50,7 +50,7 @@ function radio($question_id, $answer_values) {
  * @return string
  */
 function handle($step) {
-  if (get_class($step)=='controllers\Radio') {
+  if (get_class($step)=='controllers\steps\Radio') {
     return radio($step->id, array_keys($step->rules));
   }
 }
