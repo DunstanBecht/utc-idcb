@@ -57,6 +57,7 @@ define('PROTECTED_VARIABLES',
     "user",
     "path",
     "answers",
+    "data",
   )
 );
 

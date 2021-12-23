@@ -19,6 +19,12 @@ abstract class Step {
   private static $pool = array();
 
   /**
+   * The step requires interaction with the user.
+   * @var boolean
+   */
+  private $visible;
+
+  /**
    * Identifier of the step.
    * @var string
    */

@@ -7,16 +7,32 @@
 
 namespace controllers;
 
-new Radio('is_a_dm', array('yes'=>'A', 'no'=>'B'));
-new Radio('A', array('yes'=>'is_a_dm', 'no'=>'is_a_dm'));
-new Radio('B', array('yes'=>'is_a_dm', 'no'=>'is_a_dm'));
-/*
-new Upload('state_of_the_art', 'is_ce_marked');
-new Radio('is_ce_marked', array('yes'=>'', 'no'=>'is_innovative'));
-new Radio('is_innovative', array('yes'=>'clinical_assessment', 'no'=>'equivalence'));
+new Radio('is_a_dm', array('yes'=>'select_class',
+                            'no'=>'see_other'));
 
-new Upload('clinical_assessment', 'edit');
-new Upload('equivalence', 'skip_investigation');
+new Radio('see_other', array('null'=>'',
+                             'null'=>''));
 
-new Hidden('skip_investigation', '')
-*/
+new Radio('select_class', array('1'=>'class_1',
+                                '2'=>'class_2',
+                                '3'=>'class_3',
+                                '4'=>'class_4'));
+
+new Define('class_1', 'class', '1', 'edit');
+new Define('class_2', 'class', '2', 'edit');
+new Define('class_3', 'class', '3', 'edit');
+new Define('class_4', 'class', '4', 'edit');
+
+
+new Radio('edit', array('see'=>'see',
+                        'null'=>''));
+
+new Match('see', 'class', array('1'=>'test_1',
+                                '2'=>'test_2',
+                                '3'=>'test_3',
+                                '4'=>'test_4'));
+
+new Radio('test_1', array('null'=>'', 'null'=>''));
+new Radio('test_2', array('null'=>'', 'null'=>''));
+new Radio('test_3', array('null'=>'', 'null'=>''));
+new Radio('test_4', array('null'=>'', 'null'=>''));

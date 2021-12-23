@@ -16,7 +16,7 @@ class Radio extends Step {
    * Next step according to the answer.
    * @var array
    */
-  public $rules;
+  protected $rules;
 
   /**
    * Instantiate the class.
@@ -27,6 +27,7 @@ class Radio extends Step {
   public function __construct($id, $rules) {
     parent::__construct($id);
     $this->rules = $rules;
+    $this->visible = True;
   }
 
 }
