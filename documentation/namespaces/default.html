@@ -55,6 +55,12 @@
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/controllers.html">controllers</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/controllers-steps.html">steps</a>
+                
+            </li>
+            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/models.html">models</a></h4>
 
@@ -78,20 +84,20 @@
                 
             </li>
                     <li>
-                <a href="packages/tabs-home.html">home</a>
+                <a href="packages/tabs-guide.html">guide</a>
                 
             </li>
                     <li>
-                <a href="packages/tabs-information.html">information</a>
+                <a href="packages/tabs-home.html">home</a>
                 
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/rooting.html">rooting</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/tools.html">tools</a></h4>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/tools.html">tools</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/rooting.html">rooting</a></h4>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/settings.html">settings</a></h4>
 
@@ -147,7 +153,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_ADMINS">ADMINS</a>
     <span>
-        &nbsp;= array(&quot;root&quot; =&gt; &quot;ZTfUs2eW?bUWcsWl&quot;)                    </span>
+        &nbsp;= array(&quot;root&quot; =&gt; &#039;$2y$10$Ki1fKc9k9WW3er6LtgHkHuXHqRyRLv2hAr9BX/QAsNjTyvmJPvrBW&#039;)                    </span>
 </dt>
 <dd>Administrators and their credentials.</dd>
 
@@ -175,7 +181,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_DB_PWD">DB_PWD</a>
     <span>
-        &nbsp;= &#039;9iB&lt;5z8E0_Ak$iri&#039;                    </span>
+        &nbsp;= &#039;###&#039;                    </span>
 </dt>
 <dd>Database password.</dd>
 
@@ -231,14 +237,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_PROTECTED_VARIABLES">PROTECTED_VARIABLES</a>
     <span>
-        &nbsp;= array(&quot;admin&quot;, &quot;user&quot;)                    </span>
+        &nbsp;= array(&quot;admin&quot;, &quot;user&quot;, &quot;path&quot;, &quot;answers&quot;, &quot;data&quot;)                    </span>
 </dt>
 <dd>Session variables that can not be modified via HTTP POST method.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_ROUTES">ROUTES</a>
     <span>
-        &nbsp;= array(&#039;home&#039; =&gt; &#039;controllers\Home&#039;, &#039;information&#039; =&gt; &#039;controllers\Information&#039;, &#039;account&#039; =&gt; &#039;controllers\Account&#039;, &#039;admin&#039; =&gt; &#039;controllers\Admin&#039;, &#039;cron&#039; =&gt; &#039;controllers\Cron&#039;)                    </span>
+        &nbsp;= array(&#039;home&#039; =&gt; &#039;controllers\Home&#039;, &#039;guide&#039; =&gt; &#039;controllers\Guide&#039;, &#039;account&#039; =&gt; &#039;controllers\Account&#039;, &#039;admin&#039; =&gt; &#039;controllers\Admin&#039;, &#039;cron&#039; =&gt; &#039;controllers\Cron&#039;)                    </span>
 </dt>
 <dd>Controller to use for each incoming URL.</dd>
 
@@ -256,7 +262,28 @@
 </dt>
 <dd>Path to Unity resources.</dd>
 
-                </dl>
+                        <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_radio_answer">radio_answer()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>This function return a radio box.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_radio">radio()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>This function generates a radio form.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_handle">handle()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>This function display a step according to its nature.</dd>
+
+    </dl>
 
         
     <section class="phpdocumentor-constants">
@@ -302,7 +329,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -312,11 +339,13 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">ADMINS</span>
-    = <span class="phpdocumentor-signature__default-value">array(&quot;root&quot; =&gt; &quot;ZTfUs2eW?bUWcsWl&quot;)</span>
+    = <span class="phpdocumentor-signature__default-value">array(&quot;root&quot; =&gt; &#039;$2y$10$Ki1fKc9k9WW3er6LtgHkHuXHqRyRLv2hAr9BX/QAsNjTyvmJPvrBW&#039;)</span>
 </code>
 
 
-    
+        <section class="phpdocumentor-description"><p>Use password_hash(&quot;<password>&quot;, PASSWORD_DEFAULT) to generate the hash.</p>
+</section>
+
         <section class="phpdocumentor-description"></section>
 
     
@@ -389,7 +418,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -418,7 +447,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -428,7 +457,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">DB_PWD</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;9iB&lt;5z8E0_Ak$iri&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;###&#039;</span>
 </code>
 
 
@@ -447,7 +476,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -688,7 +717,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">PROTECTED_VARIABLES</span>
-    = <span class="phpdocumentor-signature__default-value">array(&quot;admin&quot;, &quot;user&quot;)</span>
+    = <span class="phpdocumentor-signature__default-value">array(&quot;admin&quot;, &quot;user&quot;, &quot;path&quot;, &quot;answers&quot;, &quot;data&quot;)</span>
 </code>
 
 
@@ -717,7 +746,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">ROUTES</span>
-    = <span class="phpdocumentor-signature__default-value">array(&#039;home&#039; =&gt; &#039;controllers\Home&#039;, &#039;information&#039; =&gt; &#039;controllers\Information&#039;, &#039;account&#039; =&gt; &#039;controllers\Account&#039;, &#039;admin&#039; =&gt; &#039;controllers\Admin&#039;, &#039;cron&#039; =&gt; &#039;controllers\Cron&#039;)</span>
+    = <span class="phpdocumentor-signature__default-value">array(&#039;home&#039; =&gt; &#039;controllers\Home&#039;, &#039;guide&#039; =&gt; &#039;controllers\Guide&#039;, &#039;account&#039; =&gt; &#039;controllers\Account&#039;, &#039;admin&#039; =&gt; &#039;controllers\Admin&#039;, &#039;cron&#039; =&gt; &#039;controllers\Cron&#039;)</span>
 </code>
 
 
@@ -736,7 +765,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -765,7 +794,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="settings.php"><a href="files/settings.html"><abbr title="settings.php">settings.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -787,7 +816,142 @@
 </article>
             </section>
 
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="namespaces/default.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_radio_answer">
+        radio_answer()
+        <a href="namespaces/default.html#function_radio_answer" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="views/pages/guide/home.php"><a href="files/views-pages-guide-home.html"><abbr title="views/pages/guide/home.php">home.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This function return a radio box.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">radio_answer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$question_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$answer_value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$question_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$answer_value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
         
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_radio">
+        radio()
+        <a href="namespaces/default.html#function_radio" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="views/pages/guide/home.php"><a href="files/views-pages-guide-home.html"><abbr title="views/pages/guide/home.php">home.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This function generates a radio form.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">radio</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$question_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$answer_values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$question_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$answer_values</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_handle">
+        handle()
+        <a href="namespaces/default.html#function_handle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="views/pages/guide/home.php"><a href="files/views-pages-guide-home.html"><abbr title="views/pages/guide/home.php">home.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This function display a step according to its nature.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">handle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Step">Step</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$step</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$step</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Step">Step</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+            </section>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">

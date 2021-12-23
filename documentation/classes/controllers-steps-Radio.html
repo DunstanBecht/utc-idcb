@@ -119,17 +119,22 @@
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/controllers.html">controllers</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/controllers-steps.html">steps</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Mail
+    Radio
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/controllers-steps-Step.html"><abbr title="\controllers\steps\Step">Step</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/tools.html">tools</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/tabs.html">tabs</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/tabs-guide.html">guide</a></li>
                             </ul>
         </div>
     
@@ -137,13 +142,13 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Radio.php"><a href="files/controllers-steps-radio.html"><abbr title="controllers/steps/Radio.php">Radio.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">This class simplifies the creation and sending of an email.</p>
+            <p class="phpdocumentor-summary">This class represents a form with radio type entries.</p>
 
 
 
@@ -159,54 +164,61 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/controllers-Mail.html#property_from">$from</a>
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/controllers-steps-Radio.html#property_rules">$rules</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Mail adresse of the recipient(s).</dd>
+<dd>Next step according to the answer.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/controllers-Mail.html#property_message">$message</a>
+    <a href="classes/controllers-steps-Step.html#property_id">$id</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>Mail HTML message.</dd>
+<dd>Identifier of the step.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/controllers-Mail.html#property_signature">$signature</a>
+    <a href="classes/controllers-steps-Step.html#property_pool">$pool</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Mail signature.</dd>
+<dd>All defined steps.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/controllers-Mail.html#property_subject">$subject</a>
+    <a href="classes/controllers-steps-Step.html#property_visible">$visible</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: bool            </span>
 </dt>
-<dd>Subject of the email to be sent.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/controllers-Mail.html#property_to">$to</a>
-    <span>
-                &nbsp;: string            </span>
-</dt>
-<dd>Receiver, or receivers of the mail.</dd>
+<dd>The step requires interaction with the user.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/controllers-Mail.html#method___construct">__construct()</a>
+    <a href="classes/controllers-steps-Radio.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: self    </span>
 </dt>
-<dd>Create the mail object.</dd>
+<dd>Instantiate the class.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/controllers-Mail.html#method_send">send()</a>
+    <a href="classes/controllers-steps-Step.html#method___get">__get()</a>
     <span>
-                        &nbsp;: void    </span>
+                        &nbsp;: mixed    </span>
 </dt>
-<dd>Send the email.</dd>
+<dd>Get an attribute value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/controllers-steps-Step.html#method_exists">exists()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>This method allows to know if a step is defined.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/controllers-steps-Step.html#method_get">get()</a>
+    <span>
+                        &nbsp;: self    </span>
+</dt>
+<dd>Get a step from its identifier.</dd>
 
         </dl>
 
@@ -218,166 +230,133 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/controllers-Mail.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/controllers-steps-Radio.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -private
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_from">
-        $from
-        <a href="classes/controllers-Mail.html#property_from" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_rules">
+        $rules
+        <a href="classes/controllers-steps-Radio.html#property_rules" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Mail adresse of the recipient(s).</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$from</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_message">
-        $message
-        <a href="classes/controllers-Mail.html#property_message" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">31</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Mail HTML message.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$message</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_signature">
-        $signature
-        <a href="classes/controllers-Mail.html#property_signature" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Mail signature.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$signature</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_subject">
-        $subject
-        <a href="classes/controllers-Mail.html#property_subject" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Subject of the email to be sent.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$subject</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_to">
-        $to
-        <a href="classes/controllers-Mail.html#property_to" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Radio.php"><a href="files/controllers-steps-radio.html"><abbr title="controllers/steps/Radio.php">Radio.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Receiver, or receivers of the mail.</p>
+        <p class="phpdocumentor-summary">Next step according to the answer.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$rules</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_id">
+        $id
+        <a href="classes/controllers-steps-Step.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Identifier of the step.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$to</span>
+    <span class="phpdocumentor-signature__name">$id</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pool">
+        $pool
+        <a href="classes/controllers-steps-Step.html#property_pool" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">All defined steps.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$pool</span>
+     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_visible">
+        $visible
+        <a href="classes/controllers-steps-Step.html#property_visible" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The step requires interaction with the user.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$visible</span>
     </code>
 
     
@@ -390,7 +369,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/controllers-Mail.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/controllers-steps-Radio.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -400,48 +379,40 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/controllers-Mail.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/controllers-steps-Radio.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Radio.php"><a href="files/controllers-steps-radio.html"><abbr title="controllers/steps/Radio.php">Radio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create the mail object.</p>
+        <p class="phpdocumentor-summary">Instantiate the class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subject</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rules</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$to</span>
+                <span class="phpdocumentor-signature__argument__name">$id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Receiver, or receivers of the mail.</p>
+                    <section class="phpdocumentor-description"><p>Identifier of the step.</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$subject</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$rules</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Subject of the email to be sent.</p>
+                    <section class="phpdocumentor-description"><p>Next step according to the answer.</p>
 </section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -460,29 +431,131 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_send">
-        send()
-        <a href="classes/controllers-Mail.html#method_send" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___get">
+        __get()
+        <a href="classes/controllers-steps-Step.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Mail.php"><a href="files/controllers-mail.html"><abbr title="controllers/Mail.php">Mail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Send the email.</p>
+        <p class="phpdocumentor-summary">Get an attribute value.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">send</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Name of the attribute.</p>
+</section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_exists">
+        exists()
+        <a href="classes/controllers-steps-Step.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This method allows to know if a step is defined.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Identifier of the step.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/controllers-steps-Step.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/steps/Step.php"><a href="files/controllers-steps-step.html"><abbr title="controllers/steps/Step.php">Step.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a step from its identifier.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Identifier of the step.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">self</span>
             &mdash;
         
     
@@ -565,7 +638,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/controllers-Mail.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/controllers-steps-Radio.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

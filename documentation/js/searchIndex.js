@@ -76,6 +76,21 @@ Search.appendIndex(
             "summary": "Instantiate\u0020the\u0020controller.",
             "url": "classes/controllers-Admin.html#method___construct"
         },                {
+            "fqsen": "\\controllers\\Controller",
+            "name": "Controller",
+            "summary": "This\u0020class\u0020is\u0020the\u0020mother\u0020class\u0020of\u0020controllers.",
+            "url": "classes/controllers-Controller.html"
+        },                {
+            "fqsen": "\\controllers\\Controller\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
+            "url": "classes/controllers-Controller.html#method_home"
+        },                {
+            "fqsen": "\\controllers\\Controller\u003A\u003Aredirect\u0028\u0029",
+            "name": "redirect",
+            "summary": "This\u0020method\u0020allows\u0020to\u0020redirect\u0020to\u0020another\u0020path.",
+            "url": "classes/controllers-Controller.html#method_redirect"
+        },                {
             "fqsen": "\\controllers\\Cron",
             "name": "Cron",
             "summary": "This\u0020class\u0020manages\u0020the\u0020interactions\u0020with\u0020the\u0020content\u0020of\u0020the\u0020cron\u0020tab.",
@@ -91,6 +106,46 @@ Search.appendIndex(
             "summary": "Instantiate\u0020the\u0020controller.",
             "url": "classes/controllers-Cron.html#method___construct"
         },                {
+            "fqsen": "\\controllers\\Guide",
+            "name": "Guide",
+            "summary": "This\u0020class\u0020manages\u0020the\u0020interactions\u0020with\u0020the\u0020content\u0020of\u0020the\u0020guide\u0020tab.",
+            "url": "classes/controllers-Guide.html"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Adefine\u0028\u0029",
+            "name": "define",
+            "summary": "Handle\u0020a\u0020step\u0020of\u0020kind\u0020define.",
+            "url": "classes/controllers-Guide.html#method_define"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Amatch\u0028\u0029",
+            "name": "match",
+            "summary": "Handle\u0020a\u0020step\u0020of\u0020kind\u0020match.",
+            "url": "classes/controllers-Guide.html#method_match"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Aradio\u0028\u0029",
+            "name": "radio",
+            "summary": "Handle\u0020a\u0020step\u0020of\u0020kind\u0020radio.",
+            "url": "classes/controllers-Guide.html#method_radio"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
+            "url": "classes/controllers-Guide.html#method_home"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "This\u0020method\u0020defines\u0020the\u0020next\u0020step.",
+            "url": "classes/controllers-Guide.html#method_next"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Aback\u0028\u0029",
+            "name": "back",
+            "summary": "This\u0020method\u0020allows\u0020a\u0020return\u0020to\u0020the\u0020previous\u0020visible\u0020step.",
+            "url": "classes/controllers-Guide.html#method_back"
+        },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020the\u0020controller.",
+            "url": "classes/controllers-Guide.html#method___construct"
+        },                {
             "fqsen": "\\controllers\\Home",
             "name": "Home",
             "summary": "This\u0020class\u0020manages\u0020the\u0020interactions\u0020with\u0020the\u0020content\u0020of\u0020the\u0020site\u0020main\u0020page.",
@@ -101,25 +156,125 @@ Search.appendIndex(
             "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
             "url": "classes/controllers-Home.html#method_home"
         },                {
-            "fqsen": "\\controllers\\Information",
-            "name": "Information",
-            "summary": "This\u0020class\u0020manages\u0020the\u0020interactions\u0020with\u0020the\u0020content\u0020of\u0020the\u0020information\u0020tab.",
-            "url": "classes/controllers-Information.html"
+            "fqsen": "\\controllers\\Mail",
+            "name": "Mail",
+            "summary": "This\u0020class\u0020simplifies\u0020the\u0020creation\u0020and\u0020sending\u0020of\u0020an\u0020email.",
+            "url": "classes/controllers-Mail.html"
         },                {
-            "fqsen": "\\controllers\\Information\u003A\u003Ahome\u0028\u0029",
-            "name": "home",
-            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
-            "url": "classes/controllers-Information.html#method_home"
+            "fqsen": "\\controllers\\Mail\u003A\u003Asend\u0028\u0029",
+            "name": "send",
+            "summary": "Send\u0020the\u0020email.",
+            "url": "classes/controllers-Mail.html#method_send"
         },                {
-            "fqsen": "\\controllers\\Information\u003A\u003Aaction1\u0028\u0029",
-            "name": "action1",
-            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020action1\u0020action.",
-            "url": "classes/controllers-Information.html#method_action1"
+            "fqsen": "\\controllers\\Mail\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020the\u0020mail\u0020object.",
+            "url": "classes/controllers-Mail.html#method___construct"
         },                {
-            "fqsen": "\\controllers\\Information\u003A\u003Aaction2\u0028\u0029",
-            "name": "action2",
-            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020action2\u0020action.",
-            "url": "classes/controllers-Information.html#method_action2"
+            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024to",
+            "name": "to",
+            "summary": "Receiver,\u0020or\u0020receivers\u0020of\u0020the\u0020mail.",
+            "url": "classes/controllers-Mail.html#property_to"
+        },                {
+            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024subject",
+            "name": "subject",
+            "summary": "Subject\u0020of\u0020the\u0020email\u0020to\u0020be\u0020sent.",
+            "url": "classes/controllers-Mail.html#property_subject"
+        },                {
+            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "Mail\u0020HTML\u0020message.",
+            "url": "classes/controllers-Mail.html#property_message"
+        },                {
+            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "Mail\u0020adresse\u0020of\u0020the\u0020recipient\u0028s\u0029.",
+            "url": "classes/controllers-Mail.html#property_from"
+        },                {
+            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "Mail\u0020signature.",
+            "url": "classes/controllers-Mail.html#property_signature"
+        },                {
+            "fqsen": "\\controllers\\steps\\Define",
+            "name": "Define",
+            "summary": "This\u0020class\u0020represents\u0020a\u0020step\u0020that\u0020sets\u0020a\u0020value\u0020to\u0020a\u0020variable.",
+            "url": "classes/controllers-steps-Define.html"
+        },                {
+            "fqsen": "\\controllers\\steps\\Define\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020the\u0020class.",
+            "url": "classes/controllers-steps-Define.html#method___construct"
+        },                {
+            "fqsen": "\\controllers\\steps\\Define\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "Name\u0020of\u0020the\u0020variable.",
+            "url": "classes/controllers-steps-Define.html#property_name"
+        },                {
+            "fqsen": "\\controllers\\steps\\Define\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "Value\u0020of\u0020the\u0020declared\u0020variable.",
+            "url": "classes/controllers-steps-Define.html#property_value"
+        },                {
+            "fqsen": "\\controllers\\steps\\Define\u003A\u003A\u0024next",
+            "name": "next",
+            "summary": "Identifier\u0020of\u0020the\u0020next\u0020step.",
+            "url": "classes/controllers-steps-Define.html#property_next"
+        },                {
+            "fqsen": "\\controllers\\steps\\Radio",
+            "name": "Radio",
+            "summary": "This\u0020class\u0020represents\u0020a\u0020form\u0020with\u0020radio\u0020type\u0020entries.",
+            "url": "classes/controllers-steps-Radio.html"
+        },                {
+            "fqsen": "\\controllers\\steps\\Radio\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020the\u0020class.",
+            "url": "classes/controllers-steps-Radio.html#method___construct"
+        },                {
+            "fqsen": "\\controllers\\steps\\Radio\u003A\u003A\u0024rules",
+            "name": "rules",
+            "summary": "Next\u0020step\u0020according\u0020to\u0020the\u0020answer.",
+            "url": "classes/controllers-steps-Radio.html#property_rules"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step",
+            "name": "Step",
+            "summary": "This\u0020class\u0020represents\u0020a\u0020step\u0020in\u0020the\u0020guide.",
+            "url": "classes/controllers-steps-Step.html"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020an\u0020attribute\u0020value.",
+            "url": "classes/controllers-steps-Step.html#method___get"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "This\u0020method\u0020allows\u0020to\u0020know\u0020if\u0020a\u0020step\u0020is\u0020defined.",
+            "url": "classes/controllers-steps-Step.html#method_exists"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020a\u0020step\u0020from\u0020its\u0020identifier.",
+            "url": "classes/controllers-steps-Step.html#method_get"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020a\u0020step.",
+            "url": "classes/controllers-steps-Step.html#method___construct"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003A\u0024pool",
+            "name": "pool",
+            "summary": "All\u0020defined\u0020steps.",
+            "url": "classes/controllers-steps-Step.html#property_pool"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003A\u0024visible",
+            "name": "visible",
+            "summary": "The\u0020step\u0020requires\u0020interaction\u0020with\u0020the\u0020user.",
+            "url": "classes/controllers-steps-Step.html#property_visible"
+        },                {
+            "fqsen": "\\controllers\\steps\\Step\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Identifier\u0020of\u0020the\u0020step.",
+            "url": "classes/controllers-steps-Step.html#property_id"
         },                {
             "fqsen": "\\LANGUAGE",
             "name": "LANGUAGE",
@@ -426,6 +581,31 @@ Search.appendIndex(
             "summary": "Style\u0020constants.",
             "url": "namespaces/default.html#constant_STYLE"
         },                {
+            "fqsen": "\\views\\Navigation",
+            "name": "Navigation",
+            "summary": "This\u0020class\u0020facilitate\u0020the\u0020creation\u0020of\u0020navigation\u0020bars.",
+            "url": "classes/views-Navigation.html"
+        },                {
+            "fqsen": "\\views\\Navigation\u003A\u003Aactions\u0028\u0029",
+            "name": "actions",
+            "summary": "Create\u0020a\u0020navigation\u0020bar\u0020for\u0020the\u0020actions\u0020of\u0020the\u0020controller.",
+            "url": "classes/views-Navigation.html#method_actions"
+        },                {
+            "fqsen": "\\radio_answer\u0028\u0029",
+            "name": "radio_answer",
+            "summary": "This\u0020function\u0020return\u0020a\u0020radio\u0020box.",
+            "url": "namespaces/default.html#function_radio_answer"
+        },                {
+            "fqsen": "\\radio\u0028\u0029",
+            "name": "radio",
+            "summary": "This\u0020function\u0020generates\u0020a\u0020radio\u0020form.",
+            "url": "namespaces/default.html#function_radio"
+        },                {
+            "fqsen": "\\handle\u0028\u0029",
+            "name": "handle",
+            "summary": "This\u0020function\u0020display\u0020a\u0020step\u0020according\u0020to\u0020its\u0020nature.",
+            "url": "namespaces/default.html#function_handle"
+        },                {
             "fqsen": "\\views\\Toggle",
             "name": "Toggle",
             "summary": "This\u0020class\u0020facilitate\u0020the\u0020creation\u0020of\u0020articles\u0020that\u0020can\u0020be\u0020extended.",
@@ -451,71 +631,6 @@ Search.appendIndex(
             "summary": "Identifier\u0020of\u0020the\u0020last\u0020created\u0020extandable\u0020block.",
             "url": "classes/views-Toggle.html#property_id"
         },                {
-            "fqsen": "\\controllers\\Mail",
-            "name": "Mail",
-            "summary": "This\u0020class\u0020simplifies\u0020the\u0020creation\u0020and\u0020sending\u0020of\u0020an\u0020email.",
-            "url": "classes/controllers-Mail.html"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003Asend\u0028\u0029",
-            "name": "send",
-            "summary": "Send\u0020the\u0020email.",
-            "url": "classes/controllers-Mail.html#method_send"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Create\u0020the\u0020mail\u0020object.",
-            "url": "classes/controllers-Mail.html#method___construct"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024to",
-            "name": "to",
-            "summary": "Receiver,\u0020or\u0020receivers\u0020of\u0020the\u0020mail.",
-            "url": "classes/controllers-Mail.html#property_to"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024subject",
-            "name": "subject",
-            "summary": "Subject\u0020of\u0020the\u0020email\u0020to\u0020be\u0020sent.",
-            "url": "classes/controllers-Mail.html#property_subject"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024message",
-            "name": "message",
-            "summary": "Mail\u0020HTML\u0020message.",
-            "url": "classes/controllers-Mail.html#property_message"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024from",
-            "name": "from",
-            "summary": "Mail\u0020adresse\u0020of\u0020the\u0020recipient\u0028s\u0029.",
-            "url": "classes/controllers-Mail.html#property_from"
-        },                {
-            "fqsen": "\\controllers\\Mail\u003A\u003A\u0024signature",
-            "name": "signature",
-            "summary": "Mail\u0020signature.",
-            "url": "classes/controllers-Mail.html#property_signature"
-        },                {
-            "fqsen": "\\controllers\\Controller",
-            "name": "Controller",
-            "summary": "This\u0020class\u0020is\u0020the\u0020mother\u0020class\u0020of\u0020controllers.",
-            "url": "classes/controllers-Controller.html"
-        },                {
-            "fqsen": "\\controllers\\Controller\u003A\u003Ahome\u0028\u0029",
-            "name": "home",
-            "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
-            "url": "classes/controllers-Controller.html#method_home"
-        },                {
-            "fqsen": "\\controllers\\Controller\u003A\u003Aredirect\u0028\u0029",
-            "name": "redirect",
-            "summary": "This\u0020method\u0020allows\u0020to\u0020redirect\u0020to\u0020another\u0020path.",
-            "url": "classes/controllers-Controller.html#method_redirect"
-        },                {
-            "fqsen": "\\views\\Navigation",
-            "name": "Navigation",
-            "summary": "This\u0020class\u0020facilitate\u0020the\u0020creation\u0020of\u0020navigation\u0020bars.",
-            "url": "classes/views-Navigation.html"
-        },                {
-            "fqsen": "\\views\\Navigation\u003A\u003Aactions\u0028\u0029",
-            "name": "actions",
-            "summary": "Create\u0020a\u0020navigation\u0020bar\u0020for\u0020the\u0020actions\u0020of\u0020the\u0020controller.",
-            "url": "classes/views-Navigation.html#method_actions"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -525,6 +640,11 @@ Search.appendIndex(
             "name": "controllers",
             "summary": "",
             "url": "namespaces/controllers.html"
+        },                {
+            "fqsen": "\\controllers\\steps",
+            "name": "steps",
+            "summary": "",
+            "url": "namespaces/controllers-steps.html"
         },                {
             "fqsen": "\\models",
             "name": "models",

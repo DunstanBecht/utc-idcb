@@ -55,6 +55,12 @@
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/controllers.html">controllers</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/controllers-steps.html">steps</a>
+                
+            </li>
+            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/models.html">models</a></h4>
 
@@ -78,20 +84,20 @@
                 
             </li>
                     <li>
-                <a href="packages/tabs-home.html">home</a>
+                <a href="packages/tabs-guide.html">guide</a>
                 
             </li>
                     <li>
-                <a href="packages/tabs-information.html">information</a>
+                <a href="packages/tabs-home.html">home</a>
                 
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/rooting.html">rooting</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/tools.html">tools</a></h4>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/tools.html">tools</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/rooting.html">rooting</a></h4>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/settings.html">settings</a></h4>
 
@@ -117,7 +123,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Information
+    Guide
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/controllers-Controller.html"><abbr title="\controllers\Controller">Controller</abbr></a>
@@ -127,7 +133,7 @@
             in package
             <ul class="phpdocumentor-breadcrumbs">
                                     <li class="phpdocumentor-breadcrumb"><a href="packages/tabs.html">tabs</a></li>
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/tabs-information.html">information</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/tabs-guide.html">guide</a></li>
                             </ul>
         </div>
     
@@ -135,13 +141,13 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Information.php"><a href="files/controllers-information.html"><abbr title="controllers/Information.php">Information.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">This class manages the interactions with the content of the information tab.</p>
+            <p class="phpdocumentor-summary">This class manages the interactions with the content of the guide tab.</p>
 
 
 
@@ -158,25 +164,32 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/controllers-Information.html#method_action1">action1()</a>
+    <a href="classes/controllers-Guide.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: self    </span>
+</dt>
+<dd>Instantiate the controller.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/controllers-Guide.html#method_back">back()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
-<dd>This method corresponds to the action1 action.</dd>
+<dd>This method allows a return to the previous visible step.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/controllers-Information.html#method_action2">action2()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>This method corresponds to the action2 action.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/controllers-Information.html#method_home">home()</a>
+    <a href="classes/controllers-Guide.html#method_home">home()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
 <dd>This method corresponds to the home action.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/controllers-Guide.html#method_next">next()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>This method defines the next step.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/controllers-Controller.html#method_redirect">redirect()</a>
@@ -184,6 +197,27 @@
                         &nbsp;: void    </span>
 </dt>
 <dd>This method allows to redirect to another path.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/controllers-Guide.html#method_define">define()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Handle a step of kind define.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/controllers-Guide.html#method_match">match()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Handle a step of kind match.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/controllers-Guide.html#method_radio">radio()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Handle a step of kind radio.</dd>
 
         </dl>
 
@@ -196,7 +230,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/controllers-Information.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/controllers-Guide.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -204,29 +238,29 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_action1">
-        action1()
-        <a href="classes/controllers-Information.html#method_action1" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/controllers-Guide.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Information.php"><a href="files/controllers-information.html"><abbr title="controllers/Information.php">Information.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">This method corresponds to the action1 action.</p>
+        <p class="phpdocumentor-summary">Instantiate the controller.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">action1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">self</span>
             &mdash;
         
     
@@ -237,22 +271,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_action2">
-        action2()
-        <a href="classes/controllers-Information.html#method_action2" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_back">
+        back()
+        <a href="classes/controllers-Guide.html#method_back" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Information.php"><a href="files/controllers-information.html"><abbr title="controllers/Information.php">Information.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">This method corresponds to the action2 action.</p>
+        <p class="phpdocumentor-summary">This method allows a return to the previous visible step.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">action2</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">back</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
@@ -272,12 +306,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_home">
         home()
-        <a href="classes/controllers-Information.html#method_home" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/controllers-Guide.html#method_home" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Information.php"><a href="files/controllers-information.html"><abbr title="controllers/Information.php">Information.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -289,6 +323,51 @@
 
     
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_next">
+        next()
+        <a href="classes/controllers-Guide.html#method_next" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This method defines the next step.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">next</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Identifier of the next step.</p>
+</section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -329,6 +408,141 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Redirection path.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_define">
+        define()
+        <a href="classes/controllers-Guide.html#method_define" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handle a step of kind define.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">define</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Define">Define</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$step</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$step</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Define">Define</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Step of kind define.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_match">
+        match()
+        <a href="classes/controllers-Guide.html#method_match" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handle a step of kind match.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Match">Match</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$step</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$step</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Match">Match</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Step of kind match.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_radio">
+        radio()
+        <a href="classes/controllers-Guide.html#method_radio" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="controllers/Guide.php"><a href="files/controllers-guide.html"><abbr title="controllers/Guide.php">Guide.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handle a step of kind radio.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">radio</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Radio">Radio</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$step</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$step</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\controllers\Radio">Radio</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Step of kind radio.</p>
 </section>
 
             </dd>
@@ -420,7 +634,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/controllers-Information.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/controllers-Guide.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
