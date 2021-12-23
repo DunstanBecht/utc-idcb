@@ -1,4 +1,9 @@
 <?php
+/**
+ * This file defines the representation of information in the site error page.
+ * @author Dunstan Becht <dunstan@becht.network>
+ * @package tabs\home
+ */
 
 ob_start(); ?>
 <article>

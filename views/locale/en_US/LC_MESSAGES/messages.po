@@ -79,7 +79,7 @@ msgid "password"
 msgstr "Password"
 
 msgid "welcome_paragraph"
-msgstr "Description (en)."
+msgstr "On May 26, 2017, the new European regulation 2017/745 came into force and turned the operators of the sector, in particular the manufacturers, upside down. Indeed, this new regulation, which appeared following various health scandals and in particular the PIP implants affair, aims to strengthen the regulatory framework around medical devices. In fact, products already in use must be CE certified according to these new requirements in order to continue to be marketed in Europe. Clinical evaluation is one of the points most concerned by this regulatory evolution and manufacturers must face new requirements in their clinical evaluation strategy. This ongoing process can take different forms depending on the class of the device, its degree of innovation and the data available in the literature. In the race for certification, optimizing the clinical evaluation allows the manufacturer to save time in the certification process and therefore money. To this end, this paper provides a summary of the major steps in the clinical evaluation process, as well as the documentation and actors associated with each step. In this perspective, a practical guide for manufacturers is associated with this project and allows to obtain in a short time, a personalized clinical evaluation plan adapted to each device."
 
 msgid "subject_confirm"
 msgstr "Confirm your email address"
@@ -94,3 +94,6 @@ msgstr "yes"
 
 msgid "answer_no"
 msgstr "no"
+
+msgid "form_submit"
+msgstr "Submit"

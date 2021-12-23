@@ -79,7 +79,7 @@ msgid "password"
 msgstr "Mot de passe"
 
 msgid "welcome_paragraph"
-msgstr "Description (fr)."
+msgstr "Le 26 Mai 2017 le nouveau règlement européen 2017/745 est entré en vigueur et à chambouler les opérateurs du secteurs, en particulier les fabricants. En effet, ce nouveau règlement, apparu suite à différents scandales sanitaires et notamment l’affaire des implants PIP, a pour vocation de renforcer le cadre règlementaire autour des dispositifs médicaux. De fait, les produits déjà en service doivent être certifié CE selon ces nouvelles exigences pour pouvoir continuer d’être commercialisés en Europe. L’évaluation clinique est un des points les plus concernés par cette évolution règlementaire et les fabricants doivent faire face à de l’apparition de nouvelles exigences dans leur stratégie d’évaluation clinique. Ce processus continu peut prendre différentes formes selon la classe du dispositif, son degré d’innovation et les données disponibles dans la littérature. Dans la course à la certification, l’optimisation de l’évaluation clinique permet au fabricant de gagner du temps dans la procédure de certification et donc de l’argent. Pour ce faire, ce mémoire propose une synthèse des grandes étapes de l’évaluation clinique, ainsi que la documentation et les acteurs associés à chaque étape. Dans cette optique, un guide pratique destiné aux fabricants est associé à ce projet et permet d’obtenir en un temps minime, un plan d’évaluation clinique personnalisé et adapté à chaque dispositif."
 
 msgid "subject_confirm"
 msgstr "Confirmez votre adresse mail"
@@ -94,3 +94,6 @@ msgstr "oui"
 
 msgid "answer_no"
 msgstr "non"
+
+msgid "form_submit"
+msgstr "Envoyer"
