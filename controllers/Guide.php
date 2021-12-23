@@ -94,7 +94,7 @@ class Guide extends Controller {
    * @return self
    */
   public function __construct() {
-    require 'controllers/tree.php';
+    require 'controllers/guide_steps.php';
     if (!isset($_SESSION["path"])) {
       $_SESSION["path"] = array('is_a_dm');
       $_SESSION["answers"] = array();
