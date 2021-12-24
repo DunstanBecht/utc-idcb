@@ -8,6 +8,11 @@
 header('content-type: text/css; charset: UTF-8');
 ob_start('ob_gzhandler');
 header('Cache-Control: max-age=3600, must-revalidate');
+
+require_once '../settings.php';
+
+$unity_bronze = file_get_contents(UNITY . "/color/bronze");
+
 ?>
 
 body {
@@ -26,4 +31,14 @@ img.wide {
 
 img.wide:hover {
   transform: scale(0.98);
+}
+
+.action_text {
+  transition: all 0.2s ease-in;
+}
+
+.active_text, .action_text:hover {
+  cursor: pointer;
+  color: #fcd216ff;
+  fill: #fcd216ff;
 }

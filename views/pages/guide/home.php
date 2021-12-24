@@ -20,7 +20,7 @@ function radio_answer($question_id, $answer_value) {
          value="<?= $answer_value ?>"
          <?= (isset($_SESSION["answers"][$question_id]) and $_SESSION["answers"][$question_id]==$answer_value) ? "checked" : "" ?>
   >
-  <label for="<?= $answer_id ?>"><?= _('answer_' . $answer_value) ?></label>
+  <label class="action_text" for="<?= $answer_id ?>"><?= _('answer_' . $answer_value) ?></label>
   <br>
   <?php return ob_get_clean();
 }

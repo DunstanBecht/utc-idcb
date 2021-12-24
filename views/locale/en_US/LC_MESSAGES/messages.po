@@ -87,6 +87,9 @@ msgstr "Confirm your email address"
 msgid "message_confirm"
 msgstr "To confirm your email address and continue creating your account use the following link."
 
+msgid "footer_contact"
+msgstr "A problem? Contact"
+
 # Guide --------------------------------------------------------------------- #
 
 msgid "form_submit"
@@ -96,7 +99,7 @@ msgid "form_back"
 msgstr "Back"
 
 msgid "answer_yes"
-msgstr "yes"
+msgstr "Yes."
 
 msgid "answer_no"
-msgstr "no"
+msgstr "No."

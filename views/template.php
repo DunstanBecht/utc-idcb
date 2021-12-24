@@ -13,7 +13,7 @@ $description = 'Description.';
     <meta name="description" content="<?= $description ?>">
     <meta name="keywords" content="Key, Word">
     <title><?= ((CONTROLLER != 'home') ? _('controller_' . CONTROLLER) . ' - ' : "") . $website ?></title>
-    <link rel="stylesheet" href="<?= UNITY ?>/style/general/1" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= UNITY ?>/style/general/1?footer_height=15" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/articles/1" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/fonts/1" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/signage/1" type="text/css" media="all">
@@ -51,6 +51,10 @@ $description = 'Description.';
             &nbsp;<?= $language ?>&nbsp;
           </a>
         <?php } ?>
+        <p>
+          <br>
+          <?= _('footer_contact') ?> <a class="action_text" href="mailto:charline.level@etu.utc.fr">charline.level@etu.utc.fr</a>
+        </p>
       </div>
     </footer>
     <?= (views\Toggle::getId()>0) ? "<script src='/views/js/toggle.js'></script>" : '' ?>
