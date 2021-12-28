@@ -105,7 +105,25 @@ msgid "answer_no"
 msgstr "Non."
 
 msgid "text_medical_device"
-msgstr "Le dispositif médical rempli l'un des critères suivants. Si aucun d'eux n'est satisfait veuillez vous orienter vers une autre procédure de certification."
+msgstr "Vous cherchez à faire certifier un instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme pour l'une ou plusieurs des fins médicales précises suivantes. <br><br>Si aucun des critères n'est satisfait veuillez vous orienter vers une autre procédure de certification."
+
+msgid "answer_md_criterion_1"
+msgstr "diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d'une maladie,"
+
+msgid "answer_md_criterion_2"
+msgstr "diagnostic, contrôle, traitement, atténuation d'une blessure ou d'un handicap ou compensation de ceux-ci,"
+
+msgid "answer_md_criterion_3"
+msgstr "investigation, remplacement ou modification d'une structure ou fonction anatomique ou d'un processus ou état physiologique ou pathologique,"
+
+msgid "answer_md_criterion_4"
+msgstr "communication d'informations au moyen d'un examen in vitro d'échantillons provenant du corps humain, y compris les dons d'organes, de sang et de tissus, et dont l'action principale voulue dans ou sur le corps humain n'est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens."
+
+msgid "answer_md_criterion_5"
+msgstr "les dispositifs destinés à la maîtrise de la conception ou à l'assistance à celle-ci,"
+
+msgid "answer_md_criterion_6"
+msgstr "les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l'article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point."
 
 msgid "text_software"
 msgstr "Le dispositif est un logiciel."

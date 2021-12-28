@@ -1,6 +1,7 @@
 <?php
 /**
  * This file defines the tree.
+ * @author Charline Level <charline.level@etu.utc.fr>
  * @author Dunstan Becht <dunstan@becht.network>
  * @package tabs\guide
  */
@@ -14,6 +15,8 @@ new Radio('medical_device', array(
   'md_criterion_2'=>'software',
   'md_criterion_3'=>'software',
   'md_criterion_4'=>'software',
+  'md_criterion_5'=>'software',
+  'md_criterion_6'=>'software',
 ));
 
 # Determination of the class ------------------------------------------------ #
