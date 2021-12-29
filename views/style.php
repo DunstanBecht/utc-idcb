@@ -11,6 +11,7 @@ header('Cache-Control: max-age=3600, must-revalidate');
 
 require_once '../settings.php';
 
+$icons = 2; // icons height [vh]
 $unity_bronze = file_get_contents(UNITY . "/color/bronze");
 
 ?>
@@ -41,4 +42,25 @@ img.wide:hover {
   cursor: pointer;
   color: #fcd216ff;
   fill: #fcd216ff;
+}
+
+.icons {
+  height: <?= $icons ?>vh;
+  padding: 0.2vh;
+}
+
+.icons_information {
+  height: <?= $icons ?>vh;
+}
+
+@media (max-aspect-ratio: <?= STYLE['width'] ?>/<?= STYLE['height'] ?>) {
+
+  .icons {
+    height: <?= $icons*$coefficient ?>vw;
+    padding: <?= 0.2*$coefficient ?>vw;
+  }
+
+  .icons_information {
+    height: <?= $icons*$coefficient ?>vw;
+  }
 }

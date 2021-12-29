@@ -5,6 +5,14 @@
  * @package tabs\guide
  */
 
+ob_start(); ?>
+<svg class="icons_information action" viewBox="0 0 512 512">
+<use href="/content/pictures/information.svg#main"></use>
+</svg>
+<?php
+$information = ob_get_clean();
+define('INFORMATION_TRIGGER', $information);
+
 /**
  * This function return a radio box.
  * @param string $question_id
@@ -26,7 +34,7 @@ function radio_answer($question_id, $answer_value) {
       $extra_key = 'answer_' . $answer_value . "_information";
       if (_($extra_key) != $extra_key) {
         $toggle = new \views\Toggle();
-        echo $toggle->trigger('[?]');
+        echo $toggle->trigger(INFORMATION_TRIGGER);
       }
     ?>
   </p>
