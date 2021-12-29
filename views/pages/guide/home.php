@@ -14,14 +14,26 @@
 function radio_answer($question_id, $answer_value) {
   $answer_id = $question_id . '_' . $answer_value;
   ob_start() ?>
-  <input type="radio"
-         name="<?= $question_id ?>"
-         id="<?= $answer_id ?>"
-         value="<?= $answer_value ?>"
-         <?= (isset($_SESSION["answers"][$question_id]) and $_SESSION["answers"][$question_id]==$answer_value) ? "checked" : "" ?>
-  >
-  <label class="action_text" for="<?= $answer_id ?>"><?= _('answer_' . $answer_value) ?></label>
-  <br>
+  <p>
+    <input type="radio"
+           name="<?= $question_id ?>"
+           id="<?= $answer_id ?>"
+           value="<?= $answer_value ?>"
+           <?= (isset($_SESSION["answers"][$question_id]) and $_SESSION["answers"][$question_id]==$answer_value) ? "checked" : "" ?>
+    >
+    <label class="action_text" for="<?= $answer_id ?>"><?= _('answer_' . $answer_value) ?></label>
+    <?php
+      $extra_key = 'answer_' . $answer_value . "_information";
+      if (_($extra_key) != $extra_key) {
+        $toggle = new \views\Toggle();
+        echo $toggle->trigger('[?]');
+      }
+    ?>
+  </p>
+  <p>
+    <?= (isset($toggle) ? $toggle->content('<br>' . _($extra_key) . '<br>', 'span') : '')?>
+    <br>
+  </p>
   <?php return ob_get_clean();
 }
 
@@ -38,7 +50,6 @@ function radio($question_id, $answer_values) {
     echo radio_answer($question_id, $answer_value);
   }
   ?>
-  <br>
   <input class="action" type="submit" value="<?= _('form_submit')?>">
   </p>
   </form>
@@ -64,11 +75,8 @@ ob_start(); ?>
     </article><br>
   <?php } ?>
   <article>
-    <p>
-      <?= _('text_' . $step->id) ?><br>
-      <br>
-      <?= handle($step); ?>
-    </p>
+    <p><?= _('text_' . $step->id) ?><br><br></p>
+    <?= handle($step); ?>
   </article>
 </main>
 <?php $content = ob_get_clean();

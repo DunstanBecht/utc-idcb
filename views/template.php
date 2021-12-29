@@ -15,7 +15,7 @@ $description = 'Description.';
     <title><?= ((CONTROLLER != 'home') ? _('controller_' . CONTROLLER) . ' - ' : "") . $website ?></title>
     <link rel="stylesheet" href="<?= UNITY ?>/style/general/1?footer_height=15" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/articles/1" type="text/css" media="all">
-    <link rel="stylesheet" href="<?= UNITY ?>/style/fonts/1" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= UNITY ?>/style/fonts/1?font_size_2=2" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/signage/1" type="text/css" media="all">
     <link rel="stylesheet" href="<?= UNITY ?>/style/colors/1?action=<?= urlencode("#fcd216ff") ?>" type="text/css" media="all">
     <link rel="stylesheet" href="/views/style.php" type="text/css" media="all">
@@ -57,6 +57,6 @@ $description = 'Description.';
         </p>
       </div>
     </footer>
-    <?= (views\Toggle::getId()>0) ? "<script src='/views/js/toggle.js'></script>" : '' ?>
+    <?= (views\Toggle::getCount()>0) ? "<script src='/views/js/toggle.js'></script>" : '' ?>
   </body>
 </html>

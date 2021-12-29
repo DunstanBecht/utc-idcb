@@ -7,15 +7,15 @@
 
 ob_start(); ?>
 <img class="wide" src="/content/pictures/utc.svg" alt="UTC">
-<?php $up_project = ob_get_clean();
+<?php $trigger_project = ob_get_clean();
 
 ob_start(); ?>
 <img class="wide" src="/content/pictures/team.svg" alt="UTC">
-<?php $up_team = ob_get_clean();
+<?php $trigger_team = ob_get_clean();
 
 ob_start(); ?>
 <p><br><?= _('welcome_paragraph'); ?></p>
-<?php $down_project = ob_get_clean();
+<?php $content_project = ob_get_clean();
 
 ob_start(); ?>
 <p><br>
@@ -25,21 +25,26 @@ ob_start(); ?>
   Bencheriff Hamza<br>
   Ait Said Hamza<br>
 </p>
-<?php $down_team = ob_get_clean();
+<?php $content_team = ob_get_clean();
+
+$toggle_project = new views\Toggle();
+$toggle_team = new views\Toggle();
 
 ob_start(); ?>
 <article>
   <h1>
     <?= _('title_project') ?>
   </h1>
-  <?= views\Toggle::message($up_project, $down_project); ?>
+  <?= $toggle_project->trigger($trigger_project) ?>
+  <?= $toggle_project->content($content_project) ?>
 </article>
 <br>
 <article>
   <h1>
     <?= _('title_team') ?>
   </h1>
-  <?= views\Toggle::message($up_team, $down_team); ?>
+  <?= $toggle_team->trigger($trigger_team) ?>
+  <?= $toggle_team->content($content_team) ?>
 </article>
 <?php $content = ob_get_clean();
 

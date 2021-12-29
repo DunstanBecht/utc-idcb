@@ -8,56 +8,69 @@
 namespace views;
 
 /**
- * This class facilitate the creation of articles that can be extended.
+ * This class facilitates the creation of content that can be extended.
  */
 class Toggle {
 
   /**
-   * Identifier of the last created extandable block.
+   * Identifier of the last extendable content created.
    * @var int
    */
-  private static $id = 0;
+  private static $counter = 0;
 
   /**
-   * Get the identifier of the last created extandable block.
+   * Identifier of the extendable content.
+   * @var string
+   */
+  private $id;
+
+  /**
+   * Get the number of extendable contents created.
    * @return int
    */
-  public static function getId() {
-    return Toggle::$id;
+  public static function getCount() {
+    return static::$counter;
   }
 
   /**
-   * Create a division that can be extended.
-   * @param string $up Displayed content.
-   * @param string $down Hidden content.
-   * @return void
+   * Instantiate an extendable content.
+   * @return self
    */
-  public static function message($up, $down) {
-    Toggle::$id = Toggle::$id + 1;
-    ?>
-    <div onclick="toggle('toggle<?= Toggle::$id ?>');"
-         style="cursor: pointer; width: 100%;"
-         class="message">
-      <?= $up ?>
-    </div>
-    <div id="toggle<?= Toggle::$id ?>" class="transition" style="display: none;">
-      <?= $down ?>
-    </div>
-    <?php
+  public function __construct() {
+    static::$counter += 1;
+    $this->id = 'toggle' . static::$counter;
   }
 
   /**
-   * Create an article that can be extended.
-   * @param string $up Displayed content.
-   * @param string $down Hidden content.
-   * @return void
+   * Return the HTML code corresponding to the triggering element.
+   * @param string $message Content placed in the HTML tag.
+   * @param string $tag HTML tag used.
+   * @param string $style CSS style of the tag.
+   * @return string
    */
-  public static function article($up, $down) {
-    ?>
-    <article>
-      <?= static::message($up, $down) ?>
-    </article>
-    <?php
+  public function trigger($message, $tag="span", $style="cursor: pointer;") {
+    ob_start(); ?>
+    <<?= $tag ?> onclick="toggle('<?= $this->id ?>');"
+                 style="<?= $style ?>">
+      <?= $message ?>
+    </<?= $tag ?>>
+    <?php return ob_get_clean();
+  }
+
+  /**
+   * Return the HTML code corresponding to the content to display or hide.
+   * @param string $message Content placed in the HTML tag.
+   * @param string $tag HTML tag used.
+   * @param string $style CSS style of the tag.
+   * @return string
+   */
+  public function content($message, $tag="div", $style="display: none;") {
+    ob_start(); ?>
+    <<?= $tag ?> id="<?= $this->id ?>"
+                 style="<?= $style ?>">
+      <?= $message ?>
+    </<?= $tag ?>>
+    <?php return ob_get_clean();
   }
 
 }
