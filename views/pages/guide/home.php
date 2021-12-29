@@ -38,7 +38,7 @@ function radio_answer($question_id, $answer_value) {
       }
     ?>
   </p>
-  <p>
+  <p class="green">
     <?= (isset($toggle) ? $toggle->content('<br>' . _($extra_key) . '<br>', 'span') : '')?>
     <br>
   </p>
@@ -53,13 +53,11 @@ function radio_answer($question_id, $answer_value) {
 function radio($question_id, $answer_values) {
   ob_start() ?>
   <form method="post">
-  <p>
-  <?php foreach ($answer_values as $answer_value) {
-    echo radio_answer($question_id, $answer_value);
-  }
-  ?>
-  <input class="action" type="submit" value="<?= _('form_submit')?>">
-  </p>
+    <?php foreach ($answer_values as $answer_value) {
+      echo radio_answer($question_id, $answer_value);
+    }
+    ?>
+    <input class="action" type="submit" value="<?= _('form_submit')?>">
   </form>
   <?php return ob_get_clean();
 }
@@ -83,7 +81,20 @@ ob_start(); ?>
     </article><br>
   <?php } ?>
   <article>
-    <p><?= _('text_' . $step->id) ?><br><br></p>
+    <p>
+      <?= _('text_' . $step->id) ?>
+      <?php
+        $extra_key = 'text_' . $step->id . "_information";
+        if (_($extra_key) != $extra_key) {
+          $toggle = new \views\Toggle();
+          echo $toggle->trigger(INFORMATION_TRIGGER);
+        }
+      ?>
+    </p>
+    <p class="green">
+      <?= (isset($toggle) ? $toggle->content('<br>' . _($extra_key) . '<br>', 'span') : '')?>
+      <br>
+    </p>
     <?= handle($step); ?>
   </article>
 </main>
