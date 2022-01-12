@@ -14,7 +14,13 @@ ob_start(); ?>
 <?php $trigger_team = ob_get_clean();
 
 ob_start(); ?>
-<p><br><?= _('welcome_paragraph'); ?></p>
+<p><br><?= _('text_objective'); ?></p>
+<ul style="text-align:left;">
+  <li><?= _('text_objective_1'); ?></li>
+  <li><?= _('text_objective_2'); ?></li>
+  <li><?= _('text_objective_3'); ?></li>
+</ul>
+<p><?= _('welcome_paragraph'); ?></p>
 <?php $content_project = ob_get_clean();
 
 ob_start(); ?>

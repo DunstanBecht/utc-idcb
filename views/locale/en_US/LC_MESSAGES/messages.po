@@ -78,6 +78,18 @@ msgstr "Admin"
 msgid "password"
 msgstr "Password"
 
+msgid "text_objective"
+msgstr "This platform is intended for manufacturers and aims to:"
+
+msgid "text_objective_1"
+msgstr "To assist manufacturers in determining the clinical strategy for their medical devices (Chapter VI: Clinical Evaluation and Investigations)."
+
+msgid "text_objective_2"
+msgstr "Determine the risk class of the device according to the rules established by the regulation (Appendix VIII: Classification Rules)."
+
+msgid "text_objective_3"
+msgstr "Obtain a personalized clinical assessment report based on the risk class and the clinical strategy being considered."
+
 msgid "welcome_paragraph"
 msgstr "On May 26, 2017, the new European regulation 2017/745 came into force and turned the operators of the sector, in particular the manufacturers, upside down. Indeed, this new regulation, which appeared following various health scandals and in particular the PIP implants affair, aims to strengthen the regulatory framework around medical devices. In fact, products already in use must be CE certified according to these new requirements in order to continue to be marketed in Europe. Clinical evaluation is one of the points most concerned by this regulatory evolution and manufacturers must face new requirements in their clinical evaluation strategy. This ongoing process can take different forms depending on the class of the device, its degree of innovation and the data available in the literature. In the race for certification, optimizing the clinical evaluation allows the manufacturer to save time in the certification process and therefore money. To this end, this paper provides a summary of the major steps in the clinical evaluation process, as well as the documentation and actors associated with each step. In this perspective, a practical guide for manufacturers is associated with this project and allows to obtain in a short time, a personalized clinical evaluation plan adapted to each device."
 
