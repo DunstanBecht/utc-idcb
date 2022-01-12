@@ -281,40 +281,47 @@ new Radio('enough_data_in_the_literature', array(
  * - Liste bibliographique
  * - Plan d'évaluation clinique
  */
-new Define('strategy_1_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_1_a',  'required_state_of_the_art', 'yes', 'strategy_1_b');
+new Define('strategy_1_b',  'required_safety_and_performance_criteria', 'yes', 'strategy_1_c');
+new Define('strategy_1_c',  'required_clinical_benefit_justification', 'yes', 'strategy_1_d');
+new Define('strategy_1_d',  'required_bibliographic_list', 'yes', 'strategy_1_e');
+new Define('strategy_1_e',  'required_clinical_evaluation_plan', 'yes', 'clinical_evaluation_report');
 
 /*
  * Strategy 2:
  * - Plan d'évaluation clinique
  * - Investigation clinique
  */
-new Define('strategy_2_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_2_a',  'required_clinical_evaluation_plan', 'yes', 'strategy_2_b');
+new Define('strategy_2_b',  'required_clinical_investigation', 'yes', 'clinical_evaluation_report');
 
 /*
  * Strategy 3:
  * - Procédure d'équivalence
  */
-new Define('strategy_3_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_3_a',  'required_equivalence_procedure', 'yes', 'clinical_evaluation_report');
 
 /*
  * Strategy 4:
  * - Investigation clinique
  */
-new Define('strategy_4_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_4_a',  'required_clinical_investigation', 'yes', 'clinical_evaluation_report');
 
 /*
  * Strategy 5:
  * - Procédure d'équivalence
  * - Plan du SCAC doit être approprié et inclut des études après commercialisation pour démontrer la sécurité et les performances du dispositif
  */
-new Define('strategy_5_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_5_a',  'required_equivalence_procedure', 'yes', 'strategy_5_b');
+new Define('strategy_5_b',  'required_scac', 'yes', 'clinical_evaluation_report');
 
 /*
  * Strategy 6:
  * - Procédure d'équivalence
  * - Le fabricant doit justifier sa décision de ne pas conduire des investigations cliniques dans le rapport d'évaluation clinique
  */
-new Define('strategy_6_a',  'foobar', '1',  'clinical_evaluation_report');
+new Define('strategy_6_a',  'required_equivalence_procedure', 'yes', 'strategy_6_b');
+new Define('strategy_6_b',  'required_justify_no_clinical_investigation ', 'yes', 'clinical_evaluation_report');
 
 # Form ---------------------------------------------------------------------- #
 

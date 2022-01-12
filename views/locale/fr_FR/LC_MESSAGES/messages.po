@@ -379,3 +379,33 @@ msgstr "Type d’évaluation de la conformité"
 
 msgid "text_section_b"
 msgstr "Description, classification, plan d’évaluation clinique du dispositif, allegation du fabricant, specifications communes et normes harmonisees appliquées, équivalence et état de l’art"
+
+msgid "resume_required"
+msgstr "Vous devrez fournir les élèments suivants en raison de la nature particulière de votre dispositif médical:"
+
+msgid "required_state_of_the_art"
+msgstr "Un état de l'art des nouveauté: DM similiares apparus, autres traitements, nouveaux diagnostiques, ..."
+
+msgid "required_safety_and_performance_criteria"
+msgstr "Critères de sécurité et de performances"
+
+msgid "required_clinical_benefit_justification"
+msgstr "Justification bénéfice clinique"
+
+msgid "required_bibliographic_list"
+msgstr "Liste bibliographique"
+
+msgid "required_clinical_evaluation_plan"
+msgstr "Plan d'évaluation clinique"
+
+msgid "required_clinical_investigation"
+msgstr "Investigation clinique"
+
+msgid "required_equivalence_procedure"
+msgstr "Procédure d'équivalence"
+
+msgid "required_scac"
+msgstr "Plan du SCAC doit être approprié et inclut des études après commercialisation pour démontrer la sécurité et les performances du dispositif"
+
+msgid "required_justify_no_clinical_investigation"
+msgstr "Le fabricant doit justifier sa décision de ne pas conduire des investigations cliniques dans le rapport d'évaluation clinique"

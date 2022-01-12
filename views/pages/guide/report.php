@@ -13,6 +13,19 @@ ob_start(); ?>
     </article><br>
   <?php } ?>
   <article>
+    <p><?= _('resume_required') ?></p>
+    <ul style="text-align:left;">
+      <?php
+        foreach ($_SESSION['data'] as $key => $value) {
+          if (strlen($key)>=9 and strcmp(substr($key, 0, 9), 'required_')==0 and strcmp($value, 'yes')==0) {
+            echo "<li>" . _($key) . "</li>";
+          }
+        }
+      ?>
+    </ul>
+  </article>
+  <br>
+  <article>
     <h1><?= _('text_clinical_evaluation_report') ?></h1>
     <p>
       <b><?= _('text_section') ?> A</b> <?= _('text_section_a') ?>
@@ -36,13 +49,13 @@ ob_start(); ?>
     </p>
     <br>
     <ul style="text-align:left;">
-      <li>1.	Description du dispositif</li>
+      <li>1. Description du dispositif</li>
       <ul>
         <li><?= _('report_item_') ?></li>
         <li><?= _('report_item_') ?></li>
         <li><?= _('report_item_') ?></li>
       </ul>
-      <li>2.	Classification</li>
+      <li>2. Classification</li>
       <ul>
         <li><?= _('report_item_') ?></li>
         <li><?= _('report_item_') ?></li>
