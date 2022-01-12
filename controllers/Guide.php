@@ -18,9 +18,11 @@ class Guide extends Controller {
    * @return void
    */
   private function define($step) {
+    if (isset($_SESSION['data'][$step->name])) {
+      throw new \Exception("Variable $step->name already defined.");
+    }
     $_SESSION['data'][$step->name] = $step->value;
     $this->next($step->next);
-    unset($_SESSION[$step->id]);
     $this->home();
   }
 
@@ -91,9 +93,13 @@ class Guide extends Controller {
     if (count($_SESSION['path'])>1) {
       array_pop($_SESSION['path']);
     }
-    if (steps\Step::get(end($_SESSION['path']))->visible) {
+    $previous = steps\Step::get(end($_SESSION['path']));
+    if ($previous->visible) {
       $this->redirect(PATH_LANGUAGE . '/guide');
     } else {
+      if (get_class($previous)=="controllers\steps\Define") {
+        unset($_SESSION['data'][$previous->name]);
+      }
       $this->back();
     }
   }
