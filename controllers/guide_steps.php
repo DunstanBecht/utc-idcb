@@ -321,7 +321,7 @@ new Define('strategy_5_b',  'required_scac', 'yes', 'clinical_evaluation_report'
  * - Le fabricant doit justifier sa décision de ne pas conduire des investigations cliniques dans le rapport d'évaluation clinique
  */
 new Define('strategy_6_a',  'required_equivalence_procedure', 'yes', 'strategy_6_b');
-new Define('strategy_6_b',  'required_justify_no_clinical_investigation ', 'yes', 'clinical_evaluation_report');
+new Define('strategy_6_b',  'required_justify_no_clinical_investigation', 'yes', 'clinical_evaluation_report');
 
 # Form ---------------------------------------------------------------------- #
 
