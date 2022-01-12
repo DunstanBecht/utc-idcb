@@ -24,13 +24,13 @@ ob_start(); ?>
 <?php $content_project = ob_get_clean();
 
 ob_start(); ?>
-<p><br>
-  Gbelay Christina <br>
-  Dalla Riva Catherine <br>
-  Level Charline<br>
-  Bencheriff Hamza<br>
-  Ait Said Hamza<br>
-</p>
+<ul style="text-align:left;">
+  <li>Gbelay Christina (cgbelay@laposte.net)</li>
+  <li>Dalla Riva Catherine (catdallariva@gmail.com)</li>
+  <li>Level Charline (levelcharline@gmail.com)</li>
+  <li>Bencheriff Hamza (bencherrifh@gmail.com)</li>
+  <li>Ait Said Hamza (aitshamza@gmail.com)</li>
+</ul>
 <?php $content_team = ob_get_clean();
 
 $toggle_project = new views\Toggle();
