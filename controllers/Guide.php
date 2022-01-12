@@ -55,6 +55,15 @@ class Guide extends Controller {
   }
 
   /**
+   * Handle a step of kind leaf.
+   * @param Leaf $step Step of kind leaf.
+   * @return void
+   */
+  private function leaf($step) {
+    require $step->view;
+  }
+
+  /**
    * This method corresponds to the home action.
    * @return void
    */
