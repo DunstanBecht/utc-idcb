@@ -314,14 +314,8 @@ msgstr "Le dispositif appartient à la liste suivante : sutures, agrafes, produi
 msgid "text_clinical_evaluation_based_on_sufficient_clinical_data"
 msgstr "L'évaluation clinique est fondée sur des données cliniques suffisantes?"
 
-msgid "clinical_evaluation_is_in_accordance_with_the_common_product_specification"
+msgid "text_clinical_evaluation_is_in_accordance_with_the_common_product_specification"
 msgstr "L'évaluation clinique est conforme à la spécification commune par produit qui est applicable pour l'évaluation clinique de ce type de dispositif lorsqu'il en existe une?"
-
-msgid "text_device_designed_by_modifying_a_device_already_marketed_by_the_same_manufacturer"
-msgstr "Est-ce que le dispostif a été conçu en modifiant un dispositif déjà commercialisé par le même fabricant ?"
-
-msgid "answer_manufacturer_demonstrated_device_equivalent_to_marketed_device"
-msgstr "Le fabricant a démontré que le dispositif est équivalent au dispositif commerciliasé ?"
 
 msgid "text_marketed_device_made_by_the_same_manufacturer"
 msgstr "Le dispositif commercialisé est fabriqué par le même fabriquant ?"
