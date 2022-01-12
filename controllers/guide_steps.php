@@ -187,10 +187,135 @@ new Radio('ce_marked', array(
 ));
 
 new Match('is_class_3', 'class', array(
-  '1'=>'test_1',
-  '2a'=>'test_2',
-  '2b'=>'test_3',
-  '3'=>'test_4',
+  '1'=>'is_implantable',
+  '2a'=>'is_implantable',
+  '2b'=>'is_implantable',
+  '3'=>'is_it_clinically_equivalent',
 ));
 
+new Match('is_implantable', 'implantable', array(
+  NULL=>'strategy_1_a',
+  'yes'=>'is_it_clinically_equivalent',
+));
+
+new Radio('is_it_clinically_equivalent', array(
+  'yes'=>'is_it_technically_equivalent',
+  'no'=>'strategy_1_a'
+));
+
+new Radio('is_it_technically_equivalent', array(
+  'yes'=>'is_it_equivalent_at_the_biological_level',
+  'no'=>'strategy_1_a'
+));
+
+new Radio('is_it_equivalent_at_the_biological_level', array(
+  'yes'=>'device_belongs_to_the_following_list',
+  'no'=>'strategy_1_a'
+));
+
+new Radio('device_belongs_to_the_following_list', array(
+  'yes'=>'clinical_evaluation_based_on_sufficient_clinical_data',
+  'no'=>'marketed_device_made_by_the_same_manufacturer?'
+));
+
+new Radio('clinical_evaluation_based_on_sufficient_clinical_data', array(
+  'yes'=>'clinical_evaluation_is_in_accordance_with_the_common_product_specification',
+  'no'=>'strategy_4_a'
+));
+
+new Radio('clinical_evaluation_is_in_accordance_with_the_common_product_specification', array(
+  'yes'=>'strategy_6_a',
+  'no'=>'strategy_4_a'
+));
+
+new Radio('marketed_device_made_by_the_same_manufacturer', array(
+  'yes'=>'manufacturer_demonstrated_device_is_equivalent_to_the_marketed_device',
+  'no'=>'both_manufacturers_have_signed_a_contract',
+));
+
+new Radio('manufacturer_demonstrated_device_is_equivalent_to_the_marketed_device', array(
+  'yes'=>'clinical_evaluation_of_the_marketed_device_sufficient_to_demonstrate_compliance_of_the_modified_device',
+  'no'=>'strategy_4_a'
+));
+
+new Radio('clinical_evaluation_of_the_marketed_device_sufficient_to_demonstrate_compliance_of_the_modified_device', array(
+  'yes'=>'strategy_5_a',
+  'no'=>'strategy_4_a'
+));
+
+new Radio('both_manufacturers_have_signed_a_contract', array(
+  'yes'=>'original_clinical_evaluation_performed_in_accordance_with_the_requirements_of_regulation_eu_2017_745?',
+  'no'=>'strategy_4_a',
+));
+
+new Radio('original_clinical_evaluation_performed_in_accordance_with_the_requirements_of_regulation_eu_2017_745', array(
+  'yes'=>'strategy_6_a',
+  'no'=>'strategy_4_a',
+));
+
+new Radio('innovative_device', array(
+  'yes'=>'strategy_2_a',
+  'no'=>'older_generations_of_products',
+));
+
+new Radio('older_generations_of_products', array(
+  'yes'=>'strategy_3_a',
+  'no'=>'equivalent_devices_already_on_the_market',
+));
+
+new Radio('equivalent_devices_already_on_the_market', array(
+  'yes'=>'strategy_3_a',
+  'no'=>'enough_data_in_the_literature',
+));
+
+new Radio('enough_data_in_the_literature', array(
+  'yes'=>'strategy_3_a',
+  'no'=>'strategy_4_a',
+));
+
+/*
+ * Strategy 1:
+ * - Réaliser un état de l'art des nouveauté: DM similiares apparus, autres traitements, nouveaux diagnostiques, ...
+ * - Critères de sécurité et de performances
+ * - Justification bénéfice clinique
+ * - Liste bibliographique
+ * - Plan d'évaluation clinique
+ */
+new Define('strategy_1_a',  'foobar', '1',  'clinical_evaluation_report');
+
+/*
+ * Strategy 2:
+ * - Plan d'évaluation clinique
+ * - Investigation clinique
+ */
+new Define('strategy_2_a',  'foobar', '1',  'clinical_evaluation_report');
+
+/*
+ * Strategy 3:
+ * - Procédure d'équivalence
+ */
+new Define('strategy_3_a',  'foobar', '1',  'clinical_evaluation_report');
+
+/*
+ * Strategy 4:
+ * - Investigation clinique
+ */
+new Define('strategy_4_a',  'foobar', '1',  'clinical_evaluation_report');
+
+/*
+ * Strategy 5:
+ * - Procédure d'équivalence
+ * - Plan du SCAC doit être approprié et inclut des études après commercialisation pour démontrer la sécurité et les performances du dispositif
+ */
+new Define('strategy_5_a',  'foobar', '1',  'clinical_evaluation_report');
+
+/*
+ * Strategy 6:
+ * - Procédure d'équivalence
+ * - Le fabricant doit justifier sa décision de ne pas conduire des investigations cliniques dans le rapport d'évaluation clinique
+ */
+new Define('strategy_6_a',  'foobar', '1',  'clinical_evaluation_report');
+
 # Form ---------------------------------------------------------------------- #
+
+new Leaf('clinical_evaluation_report', 'views/pages/guide/report.php');

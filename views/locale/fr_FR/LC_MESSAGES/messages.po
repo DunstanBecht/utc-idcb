@@ -277,3 +277,105 @@ msgstr "Administration de médicaments à risques."
 
 msgid "text_ce_marked"
 msgstr "Le dispositif a déjà été marqué CE."
+
+msgid "text_is_it_clinically_equivalent"
+msgstr "Est-ce qu'il est équivalent au niveau clinique ?"
+
+msgid "text_is_it_clinically_equivalent_information"
+msgstr "- utilisé pour un même état clinique, ou une même destination, notamment sévérité et stade similaires de la maladie, - utilisé sur le même site dans le corps, - utilisé dans une population similaire (notamment pour ce qui est de l’âge, le sexe, l’anatomie, la physiologie, éventuellement d’autres aspects), - utilisé par un même type d’utilisateur, et - présente des performances critiques pertinentes similaires au regard de l’effet clinique escompté pour une destination donnée"
+
+msgid "text_is_it_technically_equivalent"
+msgstr "Est-ce qu'il est équivalent au niveau technique ?"
+
+msgid "text_is_it_technically_equivalent_information"
+msgstr "- être de conception similaire, - être utilisés dans des conditions d’utilisation similaires, - avoir des spécifications et des propriétés similaires (notamment des propriétés physicochimiques telles que l’intensité énergétique, la résistance à la traction, la viscosité, les propriétés de surface, la longueur d’onde et les algorithmes), - utiliser des méthodes d’installation similaires, le cas échéant, et - être sujet aux mêmes principes opératoires et exigences en matière de performances critiques."
+
+msgid "text_is_it_equivalent_at_the_biological_level"
+msgstr "Est-ce qu'il est équivalent au niveau biologique ?"
+
+msgid "text_is_it_equivalent_at_the_biological_level_information"
+msgstr "- utiliser les mêmes matériaux ou substances en contact avec les mêmes tissus humains ou fluides corporels pour un même type ou une même durée de contact et des caractéristiques de libérations des substances similaires, y compris les produits de dégradation et substances relargables"
+
+msgid "text_device_belongs_to_the_following_list"
+msgstr "Le dispositif appartient à la liste suivante : sutures, agrafes, produits d'obturation dentaire, appareils orthodontiques, couronnes dentaires, vis, cales, plaques, guides, broches, clips, dispositifs de connexion."
+
+msgid "text_clinical_evaluation_based_on_sufficient_clinical_data"
+msgstr "L'évaluation clinique est fondée sur des données cliniques suffisantes?"
+
+msgid "clinical_evaluation_is_in_accordance_with_the_common_product_specification"
+msgstr "L'évaluation clinique est conforme à la spécification commune par produit qui est applicable pour l'évaluation clinique de ce type de dispositif lorsqu'il en existe une?"
+
+msgid "text_device_designed_by_modifying_a_device_already_marketed_by_the_same_manufacturer"
+msgstr "Est-ce que le dispostif a été conçu en modifiant un dispositif déjà commercialisé par le même fabricant ?"
+
+msgid "answer_manufacturer_demonstrated_device_equivalent_to_marketed_device"
+msgstr "Le fabricant a démontré que le dispositif est équivalent au dispositif commerciliasé ?"
+
+msgid "text_marketed_device_made_by_the_same_manufacturer"
+msgstr "Le dispositif commercialisé est fabriqué par le même fabriquant ?"
+
+msgid "text_manufacturer_demonstrated_device_is_equivalent_to_the_marketed_device"
+msgstr "Le fabricant a démontré que le dispositif est équivalent au dispositif commerciliasé ?"
+
+msgid "text_clinical_evaluation_of_the_marketed_device_sufficient_to_demonstrate_compliance_of_the_modified_device"
+msgstr "Est-ce que l'évaluation clinique du dispositif commercialisé suffit à démontrer la conformité du dispositif modifié avec les exigences pertinentes en matière de sécurité et de performances?"
+
+msgid "text_both_manufacturers_have_signed_a_contract"
+msgstr "Les deux fabricants ont signé un contrat qui accordent explicitement au fabricant du second dispositif un accès total et permanent à la documentation technique?"
+
+msgid "text_original_clinical_evaluation_performed_in_accordance_with_the_requirements_of_regulation_eu_2017_745"
+msgstr "L'évaluation clinique d'origine a été effectué conformément aux exigences du règlement (UE) 2017/745?"
+
+msgid "text_innovative_device"
+msgstr "Est-ce que le dispositif médical est innovant ? (annexe 1 du guide)"
+
+msgid "text_older_generations_of_products"
+msgstr "Existe t-il des anciennes générations de produits ?"
+
+msgid "text_equivalent_devices_already_on_the_market"
+msgstr "Dispositifs équivalents déjà sur le marché ?"
+
+msgid "text_enough_data_in_the_literature"
+msgstr "Existe t-il suffisament de données dans la littérature ?"
+
+msgid "text_clinical_evaluation_report"
+msgstr "Rapport d'évaluation clinique"
+
+msgid "text_section"
+msgstr "Section"
+
+msgid "text_section_a"
+msgstr "Fabricant, produit, référence du rapport d’évaluation clinique et type d’évaluation clinique"
+
+msgid "report_item_name_model_type"
+msgstr "Nom, modèle et type du dispositif"
+
+msgid "report_item_risk_class"
+msgstr "Classe de risque"
+
+msgid "report_item_applicable_codes"
+msgstr "Code(s) applicable(s) selon le Règlement d'exécution (UE) 2017/2185 de la Commission"
+
+msgid "report_item_udi_id"
+msgstr "UDI-ID de base (si disponible)"
+
+msgid "report_item_cnd_code"
+msgstr "Code CND (code de la nomenclature CND le plus précis possible, avec le maximum de nombre, correspondant à votre dispositif)"
+
+msgid "report_item_certificate_number"
+msgstr "Numéro du certificat (si applicable)"
+
+msgid "report_item_manufacturer_clinical_evaluation_report_reference"
+msgstr "Référence du rapport d’évaluation clinique du fabricant"
+
+msgid "report_item_manufacturer_name_and_srn"
+msgstr "Nom du fabricant et SRN"
+
+msgid "report_item_authorized_representative_name_and_srn"
+msgstr "Nom du représentant autorisé (si applicable) et SRN"
+
+msgid "report_item_conformity_assessment_type"
+msgstr "Type d’évaluation de la conformité"
+
+msgid "text_section_b"
+msgstr "Description, classification, plan d’évaluation clinique du dispositif, allegation du fabricant, specifications communes et normes harmonisees appliquées, équivalence et état de l’art"
