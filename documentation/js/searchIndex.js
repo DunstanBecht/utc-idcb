@@ -126,6 +126,11 @@ Search.appendIndex(
             "summary": "Handle\u0020a\u0020step\u0020of\u0020kind\u0020radio.",
             "url": "classes/controllers-Guide.html#method_radio"
         },                {
+            "fqsen": "\\controllers\\Guide\u003A\u003Aleaf\u0028\u0029",
+            "name": "leaf",
+            "summary": "Handle\u0020a\u0020step\u0020of\u0020kind\u0020leaf.",
+            "url": "classes/controllers-Guide.html#method_leaf"
+        },                {
             "fqsen": "\\controllers\\Guide\u003A\u003Ahome\u0028\u0029",
             "name": "home",
             "summary": "This\u0020method\u0020corresponds\u0020to\u0020the\u0020home\u0020action.",
@@ -591,6 +596,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020navigation\u0020bar\u0020for\u0020the\u0020actions\u0020of\u0020the\u0020controller.",
             "url": "classes/views-Navigation.html#method_actions"
         },                {
+            "fqsen": "\\INFORMATION_TRIGGER",
+            "name": "INFORMATION_TRIGGER",
+            "summary": "",
+            "url": "namespaces/default.html#constant_INFORMATION_TRIGGER"
+        },                {
             "fqsen": "\\radio_answer\u0028\u0029",
             "name": "radio_answer",
             "summary": "This\u0020function\u0020return\u0020a\u0020radio\u0020box.",
@@ -608,28 +618,63 @@ Search.appendIndex(
         },                {
             "fqsen": "\\views\\Toggle",
             "name": "Toggle",
-            "summary": "This\u0020class\u0020facilitate\u0020the\u0020creation\u0020of\u0020articles\u0020that\u0020can\u0020be\u0020extended.",
+            "summary": "This\u0020class\u0020facilitates\u0020the\u0020creation\u0020of\u0020content\u0020that\u0020can\u0020be\u0020extended.",
             "url": "classes/views-Toggle.html"
         },                {
-            "fqsen": "\\views\\Toggle\u003A\u003AgetId\u0028\u0029",
-            "name": "getId",
-            "summary": "Get\u0020the\u0020identifier\u0020of\u0020the\u0020last\u0020created\u0020extandable\u0020block.",
-            "url": "classes/views-Toggle.html#method_getId"
+            "fqsen": "\\views\\Toggle\u003A\u003AgetCount\u0028\u0029",
+            "name": "getCount",
+            "summary": "Get\u0020the\u0020number\u0020of\u0020extendable\u0020contents\u0020created.",
+            "url": "classes/views-Toggle.html#method_getCount"
         },                {
-            "fqsen": "\\views\\Toggle\u003A\u003Amessage\u0028\u0029",
-            "name": "message",
-            "summary": "Create\u0020a\u0020division\u0020that\u0020can\u0020be\u0020extended.",
-            "url": "classes/views-Toggle.html#method_message"
+            "fqsen": "\\views\\Toggle\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020an\u0020extendable\u0020content.",
+            "url": "classes/views-Toggle.html#method___construct"
         },                {
-            "fqsen": "\\views\\Toggle\u003A\u003Aarticle\u0028\u0029",
-            "name": "article",
-            "summary": "Create\u0020an\u0020article\u0020that\u0020can\u0020be\u0020extended.",
-            "url": "classes/views-Toggle.html#method_article"
+            "fqsen": "\\views\\Toggle\u003A\u003Atrigger\u0028\u0029",
+            "name": "trigger",
+            "summary": "Return\u0020the\u0020HTML\u0020code\u0020corresponding\u0020to\u0020the\u0020triggering\u0020element.",
+            "url": "classes/views-Toggle.html#method_trigger"
+        },                {
+            "fqsen": "\\views\\Toggle\u003A\u003Acontent\u0028\u0029",
+            "name": "content",
+            "summary": "Return\u0020the\u0020HTML\u0020code\u0020corresponding\u0020to\u0020the\u0020content\u0020to\u0020display\u0020or\u0020hide.",
+            "url": "classes/views-Toggle.html#method_content"
+        },                {
+            "fqsen": "\\views\\Toggle\u003A\u003A\u0024counter",
+            "name": "counter",
+            "summary": "Identifier\u0020of\u0020the\u0020last\u0020extendable\u0020content\u0020created.",
+            "url": "classes/views-Toggle.html#property_counter"
         },                {
             "fqsen": "\\views\\Toggle\u003A\u003A\u0024id",
             "name": "id",
-            "summary": "Identifier\u0020of\u0020the\u0020last\u0020created\u0020extandable\u0020block.",
+            "summary": "Identifier\u0020of\u0020the\u0020extendable\u0020content.",
             "url": "classes/views-Toggle.html#property_id"
+        },                {
+            "fqsen": "\\controllers\\steps\\Leaf",
+            "name": "Leaf",
+            "summary": "This\u0020class\u0020represents\u0020one\u0020of\u0020the\u0020ends\u0020of\u0020the\u0020the\u0020guide.",
+            "url": "classes/controllers-steps-Leaf.html"
+        },                {
+            "fqsen": "\\controllers\\steps\\Leaf\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020an\u0020attribute\u0020value.",
+            "url": "classes/controllers-steps-Leaf.html#method___get"
+        },                {
+            "fqsen": "\\controllers\\steps\\Leaf\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Instantiate\u0020the\u0020class.",
+            "url": "classes/controllers-steps-Leaf.html#method___construct"
+        },                {
+            "fqsen": "\\controllers\\steps\\Leaf\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "Step\u0020view.",
+            "url": "classes/controllers-steps-Leaf.html#property_view"
+        },                {
+            "fqsen": "\\controllers\\steps\\Leaf\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Identifier\u0020of\u0020the\u0020step.",
+            "url": "classes/controllers-steps-Leaf.html#property_id"
         },                {
             "fqsen": "\\",
             "name": "\\",
