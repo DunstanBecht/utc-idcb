@@ -78,7 +78,7 @@ define('PATH_LOCATION', '/' . implode('/', $location));
 define('PARAMETER', array_slice($location, 2));
 
 // Retrieve the country:
-if (isset($locale) and in_array($locale[1], LANGUAGES[LANGUAGE])) {
+if (isset($locale) and count($locale)>1 and in_array($locale[1], LANGUAGES[LANGUAGE])) {
   $country = $locale[1];
 } else {
   $country = LANGUAGES[LANGUAGE][0];
